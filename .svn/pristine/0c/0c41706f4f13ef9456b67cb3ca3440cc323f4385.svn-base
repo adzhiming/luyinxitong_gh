@@ -1,0 +1,127 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+use Think\Model;
+use Think\Log;
+use Think\Upload;
+class RecordController extends Controller {
+    public function index(){
+        $this->display();
+    }
+    
+    public function recordList(){
+        if(IS_AJAX){
+            $sEcho = $_REQUEST['sEcho']; // DataTables 用来生成的信息
+            $output['sEcho'] = $sEcho;
+            /* $function= $_REQUEST['fun']; //默认拉取列表-漏洞样本
+            $PageShow =  $_REQUEST['iDisplayLength'];    //每页显示10个
+            $TimeStart = $_REQUEST['TimeStart'];    //开始时间
+            $TimeEnd = $_REQUEST['TimeEnd'];    //结束时间
+            $SampleSrc = $_REQUEST['SampleSrc'];    //样本来源
+            $ProtocolType=$_REQUEST['ProtocolType'];   //协议类型 */
+            
+            /* <td><input type="checkbox"></td>
+            <th>线路号</th>
+            <th>线路信息</th>
+            <th>主叫</th>
+            <th>被叫</th>
+            <th>录音号码</th>
+            <th>方向</th>
+            <th>开始时间</th>
+            <th>结束时间</th>
+            <th>时长</th>
+            <th>录音播放</th>
+            <th>主叫录像</th>
+            <th>被叫录像</th>
+            <th>锁定</th>
+            <th>备注</th> */
+            
+            $Hash ='3213afd1b3151311313';
+            $out['N_SN'] = 1;
+            $out['N_ChannelID'] = '3';
+            $out['N_ChannelInfo'] = '5号通道';
+            $out['V_Caller'] = '5002';
+            $out['V_Called'] = '8632';
+            $out['V_Called']= '8632';
+            $out['N_CallDirection'] = '主叫';
+            $out['D_StartTime'] = '2018-1-11 15:20:26';
+            $out['D_StopTime'] = '2018-1-11 15:23:28';
+            $out['longtime'] = "20";
+            $out['V_VoiceFile'] = 1;
+            $out['V_VoiceFile'] = 1;
+            $out['V_VoiceFile'] = 1;
+            $out['N_Locker'] = 1;
+            $out['ReMark'] = 1;
+ 
+            for($i=1;$i<=12;$i++){
+                $aaData[]=$out;
+                $output['aaData'] = $aaData;
+            }
+            
+            $output['iTotalDisplayRecords'] = 100;    //如果有全局搜索，搜索出来的个数
+            $output['iTotalRecords'] = 100; //总共有几条数据
+            echo json_encode($output); //最后把数据以json格式返回
+            die;
+        }
+        $this->assign("CurrentPage",'recordList');
+        $this->display();
+    }
+    
+    public function recordCount(){
+        if(IS_AJAX){
+            $sEcho = $_REQUEST['sEcho']; // DataTables 用来生成的信息
+            $output['sEcho'] = $sEcho;
+            /* $function= $_REQUEST['fun']; //默认拉取列表-漏洞样本
+             $PageShow =  $_REQUEST['iDisplayLength'];    //每页显示10个
+             $TimeStart = $_REQUEST['TimeStart'];    //开始时间
+             $TimeEnd = $_REQUEST['TimeEnd'];    //结束时间
+             $SampleSrc = $_REQUEST['SampleSrc'];    //样本来源
+             $ProtocolType=$_REQUEST['ProtocolType'];   //协议类型 */
+            
+            /* <td><input type="checkbox"></td>
+             <th>线路号</th>
+             <th>线路信息</th>
+             <th>主叫</th>
+             <th>被叫</th>
+             <th>录音号码</th>
+             <th>方向</th>
+             <th>开始时间</th>
+             <th>结束时间</th>
+             <th>时长</th>
+             <th>录音播放</th>
+             <th>主叫录像</th>
+             <th>被叫录像</th>
+             <th>锁定</th>
+             <th>备注</th> */
+            
+            $Hash ='3213afd1b3151311313';
+            $out['N_SN'] = 1;
+            $out['N_ChannelID'] = '3';
+            $out['N_ChannelInfo'] = '5号通道';
+            $out['V_Caller'] = '5002';
+            $out['V_Called'] = '8632';
+            $out['V_Called']= '8632';
+            $out['N_CallDirection'] = '主叫';
+            $out['D_StartTime'] = '2018-1-11 15:20:26';
+            $out['D_StopTime'] = '2018-1-11 15:23:28';
+            $out['longtime'] = "20";
+            $out['V_VoiceFile'] = 1;
+            $out['V_VoiceFile'] = 1;
+            $out['V_VoiceFile'] = 1;
+            $out['N_Locker'] = 1;
+            $out['ReMark'] = 1;
+            
+            for($i=1;$i<=12;$i++){
+                $aaData[]=$out;
+                $output['aaData'] = $aaData;
+            }
+            
+            $output['iTotalDisplayRecords'] = 100;    //如果有全局搜索，搜索出来的个数
+            $output['iTotalRecords'] = 100; //总共有几条数据
+            echo json_encode($output); //最后把数据以json格式返回
+            die;
+        }
+        $this->assign("CurrentPage",'recordCount');
+        $this->display();
+    }
+}

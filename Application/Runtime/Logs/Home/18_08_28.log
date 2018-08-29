@@ -1,0 +1,1235 @@
+[ 2018-08-28T23:39:13+08:00 ] 127.0.0.1 /home/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2018-08-28T23:39:13+08:00 ] 127.0.0.1 /home/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2018-08-28T23:39:21+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.010000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.010000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-08-28T23:39:29+08:00 ] 127.0.0.1 /home/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0490s ]
+NOTIC: [8] Undefined index: password H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 25 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'admin' AND `V_AccountName` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-08-28T23:40:53+08:00 ] 127.0.0.1 /home/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0410s ]
+NOTIC: [8] Undefined index: password H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 25 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'admin' AND `V_AccountName` = 'admin' LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-08-28T23:40:56+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-28T23:41:02+08:00 ] 127.0.0.1 /home/login/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0390s ]
+NOTIC: [8] Undefined index: uname H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 26 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'admin' AND `V_AccountName` = null LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-08-28T23:41:03+08:00 ] 127.0.0.1 /home/login/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0340s ]
+NOTIC: [8] Undefined index: uname H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 26 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'admin' AND `V_AccountName` = null LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-08-28T23:41:07+08:00 ] 127.0.0.1 /home/login/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0460s ]
+NOTIC: [8] Undefined index: uname H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 26 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'admin' AND `V_AccountName` = null LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-08-28T23:41:08+08:00 ] 127.0.0.1 /home/login/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0340s ]
+NOTIC: [8] Undefined index: uname H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 26 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'admin' AND `V_AccountName` = null LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-08-28T23:42:53+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-08-28T23:42:59+08:00 ] 127.0.0.1 /home/login/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0330s ]
+NOTIC: [8] Undefined index: uname H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 26 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'admin' AND `V_AccountName` = null LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-08-28T23:43:00+08:00 ] 127.0.0.1 /home/login/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0420s ]
+NOTIC: [8] Undefined index: uname H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 26 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'admin' AND `V_AccountName` = null LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-08-28T23:44:02+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-08-28T23:44:13+08:00 ] 127.0.0.1 /home/login/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0340s ]
+NOTIC: [8] Undefined index: uname H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 26 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'admin' AND `V_AccountName` = null LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-08-28T23:44:14+08:00 ] 127.0.0.1 /home/login/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0350s ]
+NOTIC: [8] Undefined index: uname H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 26 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'admin' AND `V_AccountName` = null LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-08-28T23:44:58+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006001s ]
+
+[ 2018-08-28T23:45:04+08:00 ] 127.0.0.1 /home/login/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0490s ]
+NOTIC: [8] Undefined index: uname H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 26 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'admin' AND `V_AccountName` = null LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-08-28T23:45:05+08:00 ] 127.0.0.1 /home/login/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0400s ]
+NOTIC: [8] Undefined index: uname H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 26 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'admin' AND `V_AccountName` = null LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-08-28T23:46:00+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-08-28T23:46:08+08:00 ] 127.0.0.1 /home/login/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0360s ]
+NOTIC: [8] Undefined index: uname H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 26 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'admin' AND `V_AccountName` = null LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-08-28T23:46:09+08:00 ] 127.0.0.1 /home/login/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0340s ]
+NOTIC: [8] Undefined index: uname H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 26 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'admin' AND `V_AccountName` = null LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-08-28T23:46:29+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2018-08-28T23:46:31+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2018-08-28T23:46:38+08:00 ] 127.0.0.1 /home/login/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0350s ]
+NOTIC: [8] Undefined index: uname H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 26 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'admin' AND `V_AccountName` = null LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-08-28T23:46:39+08:00 ] 127.0.0.1 /home/login/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0290s ]
+NOTIC: [8] Undefined index: uname H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 26 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'admin' AND `V_AccountName` = null LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-08-28T23:50:23+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-08-28T23:50:30+08:00 ] 127.0.0.1 /home/login/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0470s ]
+NOTIC: [8] Undefined index: uname H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 26 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_AccountName` = null AND `V_Password` = '' LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-08-28T23:50:31+08:00 ] 127.0.0.1 /home/login/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0340s ]
+NOTIC: [8] Undefined index: uname H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 26 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_AccountName` = null AND `V_Password` = '' LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-08-28T23:50:53+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-08-28T23:51:10+08:00 ] 127.0.0.1 /home/login/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0440s ]
+NOTIC: [8] Undefined index: uname H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 26 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_AccountName` = null AND `V_Password` = '' LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-08-28T23:51:11+08:00 ] 127.0.0.1 /home/login/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0290s ]
+NOTIC: [8] Undefined index: uname H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 26 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_AccountName` = null AND `V_Password` = '' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-08-28T23:52:04+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-28T23:52:11+08:00 ] 127.0.0.1 /home/login/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0240s ]
+NOTIC: [8] Undefined index: uname H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 26 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_AccountName` = null AND `V_Password` = '' LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-08-28T23:52:12+08:00 ] 127.0.0.1 /home/login/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0370s ]
+NOTIC: [8] Undefined index: uname H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 26 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_AccountName` = null AND `V_Password` = '' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-08-28T23:52:22+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2018-08-28T23:52:23+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-08-28T23:52:23+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-08-28T23:52:23+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-08-28T23:52:31+08:00 ] 127.0.0.1 /home/login/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0310s ]
+NOTIC: [8] Undefined index: uname H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 26 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_AccountName` = null AND `V_Password` = '' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-08-28T23:52:32+08:00 ] 127.0.0.1 /home/login/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0390s ]
+NOTIC: [8] Undefined index: uname H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 26 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_AccountName` = null AND `V_Password` = '' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-08-28T23:53:27+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-28T23:53:29+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-08-28T23:53:29+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-08-28T23:53:29+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2018-08-28T23:53:29+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-28T23:53:30+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.019001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.020001s ]
+
+[ 2018-08-28T23:53:41+08:00 ] 127.0.0.1 /home/login/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0340s ]
+NOTIC: [8] Undefined index: uname H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 26 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_AccountName` = null AND `V_Password` = '' LIMIT 1   [ RunTime:0.0040s ]
+
+[ 2018-08-28T23:53:42+08:00 ] 127.0.0.1 /home/login/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0400s ]
+NOTIC: [8] Undefined index: uname H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 26 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_AccountName` = null AND `V_Password` = '' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-08-28T23:54:08+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-28T23:54:10+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-28T23:54:10+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008001s ]
+
+[ 2018-08-28T23:54:10+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-28T23:54:11+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-08-28T23:54:11+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-28T23:54:11+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-28T23:54:39+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-28T23:54:40+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-28T23:54:40+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006001s ]
+
+[ 2018-08-28T23:54:47+08:00 ] 127.0.0.1 /home/login/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0360s ]
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_AccountName` = 'admin' AND `V_Password` = 'admin' LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-08-28T23:55:15+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-08-28T23:55:21+08:00 ] 127.0.0.1 /home/login/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0340s ]
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_AccountName` = 'admin' AND `V_Password` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-08-28T23:55:22+08:00 ] 127.0.0.1 /home/account/synPhoneBook
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_paramssystem` [ RunTime:0.0520s ]
+SQL: SELECT * FROM `tab_sys_paramssystem` WHERE ( V_ParamsName = 'Sys_Version' ) LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `tab_new_phonebook` [ RunTime:0.0670s ]
+SQL: SELECT * FROM `tab_new_phonebook` WHERE ( is_update = 0 ) ORDER BY name  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `tab_dept` [ RunTime:0.0700s ]
+SQL: SELECT * FROM `tab_dept` WHERE ( DeptName = '广州调度台省调' ) LIMIT 1   [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `tab_phonebook` [ RunTime:0.0580s ]
+SQL: SELECT * FROM `tab_phonebook` WHERE ( deptid ='8' and contactName ='测试001' ) LIMIT 1   [ RunTime:0.0080s ]
+SQL: UPDATE `tab_phonebook` SET `phone1`='1234567890',`phone2`='',`phone3`='',`phone4`='',`phone5`='',`phone6`='',`phone7`='',`phone8`='',`phone9`='',`phone10`='' WHERE ( deptid ='8' and contactName ='测试001' ) [ RunTime:0.0330s ]
+SQL: SELECT * FROM `tab_dept` WHERE ( DeptName = '泰州电站变电站' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tab_phonebook` WHERE ( deptid ='9' and contactName ='测试002' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `tab_phonebook` SET `phone1`='798413213214',`phone2`='89768541651',`phone3`='7984135198',`phone4`='7984',`phone5`='519874651',`phone6`='36484',`phone7`='465464',`phone8`='4654621',`phone9`='8465132',`phone10`='4651321' WHERE ( deptid ='9' and contactName ='测试002' ) [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tab_dept` WHERE ( DeptName = '镇江电厂市调' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tab_phonebook` WHERE ( deptid ='10' and contactName ='通讯录测试' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `tab_phonebook` SET `phone1`='984651',`phone2`='987651',`phone3`='32749',`phone4`='841321',`phone5`='4651',`phone6`='321654',`phone7`='321',`phone8`='654321',`phone9`='465132',`phone10`='1' WHERE ( deptid ='10' and contactName ='通讯录测试' ) [ RunTime:0.0020s ]
+
+[ 2018-08-28T23:55:24+08:00 ] 127.0.0.1 /home/record/recordList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_paramssystem` [ RunTime:0.0340s ]
+SQL: SELECT * FROM `tab_sys_paramssystem` WHERE ( V_ParamsName = 'Sys_Version' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tab_drcu_circfg` [ RunTime:0.0410s ]
+SQL: SELECT distinct chno FROM `tab_drcu_circfg` ORDER BY dispchno  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `tab_sys_paramschannel` [ RunTime:0.0400s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='0' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='1' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='2' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='3' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='4' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='5' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='6' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='7' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0070s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='8' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='9' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='11' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='12' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0070s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='13' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='14' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='15' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0070s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='16' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='17' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='18' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0070s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='19' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='20' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0070s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='21' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0070s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='22' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='23' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='24' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='25' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='26' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='27' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='28' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='29' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='30' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='31' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10000' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10001' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10002' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10003' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10004' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10005' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10006' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10007' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: AccountSub H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 171 行.
+NOTIC: [8] Undefined variable: SystemSub H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 178 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-28T23:55:26+08:00 ] 127.0.0.1 /index.php/Home/record/recordList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_paramssystem` [ RunTime:0.0340s ]
+SQL: SELECT * FROM `tab_sys_paramssystem` WHERE ( V_ParamsName = 'Sys_Version' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tab_rec_cdrinfo` [ RunTime:0.0540s ]
+SQL: SHOW COLUMNS FROM `tab_rec_bakinfo` [ RunTime:0.0650s ]
+NOTIC: [8] Undefined index: sEcho H:\www\luyinxitong_gh\Application\Home\Controller\RecordController.class.php 第 36 行.
+NOTIC: [8] Undefined variable: where H:\www\luyinxitong_gh\Application\Home\Controller\RecordController.class.php 第 44 行.
+SQL: SELECT count(*) cnt FROM `tab_rec_cdrinfo` WHERE (  D_StartTime between '2018-08-28 00:00:00' and '2018-08-28 23:59:59'  and  (unix_timestamp(D_StopTime)-unix_timestamp(D_StartTime))>=1  ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT count(*) cnt FROM `tab_rec_bakinfo` WHERE (  D_StartTime between '2018-08-28 00:00:00' and '2018-08-28 23:59:59'  and  (unix_timestamp(D_StopTime)-unix_timestamp(D_StartTime))>=1  ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT `N_SN`,`N_ChannelID`,`D_StartTime`,`D_StopTime`,`V_VoiceFile`,`N_FileFormat`,`N_CallDirection`,`V_Caller`,`V_Called`,`V_Ext`,`N_BackUp`,`N_Lock`,`N_Alarm`,`N_AvoidRec`,`N_DeleteFlag`,`N_Locker`,`V_Path`,`V_NetPath`,`V_Diverter`,`V_Diverted`,`N_IsTalk`,`ReMark` FROM `tab_rec_cdrinfo` WHERE (  D_StartTime between '2018-08-28 00:00:00' and '2018-08-28 23:59:59'  and  (unix_timestamp(D_StopTime)-unix_timestamp(D_StartTime))>=1  ) ORDER BY D_StartTime desc LIMIT 0,10   [ RunTime:0.0070s ]
+

@@ -1,0 +1,25 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+use Think\Model;
+use Think\Log;
+use Think\Upload;
+class AccountController extends Controller {
+    public function _initialize() {
+        $this->assign("AccountSub",1);
+    }
+    public function index(){
+        $this->display();
+    }
+    
+    public function userManage(){
+       
+        $this->assign("CurrentPage",'userManage');
+        $this->display();
+    }
+    
+    public function phoneBook(){
+        $this->assign("CurrentPage",'phoneBook');
+        $this->display();
+    }
+} 

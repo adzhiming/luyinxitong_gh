@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+	
+        <title>录音系统</title>
+
+        <link href="__PUBLIC__/assets/bootstrap/css/style.default.css" rel="stylesheet">
+        <link href="__PUBLIC__/assets/bootstrap/css/morris.css" rel="stylesheet">
+        <link href="__PUBLIC__/assets/bootstrap/css/select2.css" rel="stylesheet" />		
+		<link href="__PUBLIC__/assets/bootstrap/css/style.css" rel="stylesheet">
+		<link href="__PUBLIC__/assets/bootstrap/css/style.calendar.css"   rel="stylesheet">
+		
+    </head>
+
+    <body>
+		<block name="header">
+           <include file="block/header"/>
+        </block>
+      
+        <section>
+            <div class="mainwrapper">
+			   <block name="left">
+			   <include file="block/left" />
+               </block>
+                <div class="mainpanel">
+                    <div class="contentpanel">
+                        <div class="row row-stat">
+						    <div class="col-md-3">
+                                <div class="panel noborder">
+                                    <div class="panel-heading noborder">
+                                        <div class="panel-btns">
+                                            <a href="#" class="panel-close tooltips" data-toggle="tooltip" title="Close Panel"><i class="fa fa-times"></i></a>
+                                        </div><!-- panel-btns -->
+                                        <div class="panel-icon icon-user"><i class="fa fa-warning"></i></div>
+                                        <div class="media-body">
+                                            <h1 class="mt5">21</h1>
+                                            <h5 class="md-title nomargin">未处理告警</h5>											
+                                        </div><!-- media-body -->
+                                    </div><!-- panel-body -->
+                                </div><!-- panel -->
+                            </div><!-- col-md-3 -->
+							
+							<div class="col-md-3">
+                                <div class="panel noborder">
+                                    <div class="panel-heading noborder">
+                                        <div class="panel-btns">
+                                            <a href="#" class="panel-close tooltips" data-toggle="tooltip" title="Close Panel"><i class="fa fa-times"></i></a>
+                                        </div><!-- panel-btns -->
+                                        <div class="panel-icon icon-globe"><i class="fa fa-warning"></i></div>
+                                        <div class="media-body">                                          
+                                            <h1 class="mt5">3298</h1>
+											<h5 class="md-title nomargin">已处理告警</h5>
+                                        </div><!-- media-body -->
+                                    </div><!-- panel-body -->
+                                </div><!-- panel -->
+                            </div><!-- col-md-3 -->
+							
+                            <div class="col-md-3">
+                                <div class="panel noborder">
+                                    <div class="panel-heading noborder">
+                                        <div class="panel-btns">
+                                            <a href="#" class="panel-close tooltips" data-toggle="tooltip" title="Close Panel"><i class="fa fa-times"></i></a>
+                                        </div><!-- panel-btns -->
+                                        <div class="panel-icon icon-envelope"><i class="fa fa-volume-control-phone"></i></div>
+                                        <div class="media-body">                                           
+                                            <h1 class="mt5">30</h1>
+											<h5 class="md-title nomargin">活跃通道数</h5>
+                                        </div><!-- media-body -->
+                                    </div><!-- panel-body -->
+                                </div><!-- panel -->
+                            </div><!-- col-md-3 -->
+							
+							<div class="col-md-3">
+                                <div class="panel noborder">
+                                    <div class="panel-heading noborder">
+                                        <div class="panel-btns">
+                                            <a href="#" class="panel-close tooltips" data-toggle="tooltip" title="Close Panel"><i class="fa fa-times"></i></a>
+                                        </div><!-- panel-btns -->
+                                        <div class="panel-icon icon-gavel"><i class="fa fa-tty"></i></div>
+                                        <div class="media-body">                                           
+                                            <h1 class="mt5">2</h1>
+											<h5 class="md-title nomargin">不活跃通道数</h5>
+                                        </div><!-- media-body -->
+                                    </div><!-- panel-body -->
+                                </div><!-- panel -->
+                            </div><!-- col-md-3 -->
+                        </div><!-- row -->
+											    
+						<div class="row">
+						    
+                            <div class="col-md-12">
+                                <div class="panel panel-default">
+                                    <div class="panel-body padding15">
+                                        <h5 class="md-title mt0 mb10">最近30天数据统计（单位：条）</h5>
+                                        <div id="basicFlotLegend" class="flotLegend"></div>
+                                        <div id="bar-chart" class="height300"></div>
+                                    </div><!-- panel-body -->
+                                    
+                                </div><!-- panel -->
+                            </div>
+                           
+                            
+                            
+                        </div><!-- row -->
+               
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="panel panel-default">
+                                    <div class="panel-body padding15">
+										 
+                                        <h5 class="md-title mt0 mb10">磁盘参数</h5>
+                                       
+
+										<div id="piechart" style="width: 100%; height: 227px;"></div>
+
+										
+                                    </div><!-- panel-body -->
+                                    
+                                </div><!-- panel -->
+                            </div><!-- col-md-4 -->
+                        </div><!-- row -->
+                        
+						
+						
+	
+
+                    </div><!-- contentpanel --> <div style="clear:both"></div>
+                </div><!-- mainpanel -->
+               
+            </div><!-- mainwrapper -->
+        </section>
+		
+        <script src="__PUBLIC__/assets/bootstrap/js/jquery-1.11.1.min.js"></script>
+        <script src="__PUBLIC__/assets/bootstrap/js/jquery-migrate-1.2.1.min.js"></script>
+        <script src="__PUBLIC__/assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="__PUBLIC__/assets/bootstrap/js/modernizr.min.js"></script>
+        <script src="__PUBLIC__/assets/bootstrap/js/pace.min.js"></script>
+        <script src="__PUBLIC__/assets/bootstrap/js/retina.min.js"></script>
+        <script src="__PUBLIC__/assets/bootstrap/js/jquery.cookies.js"></script>
+        <script src="__PUBLIC__/assets/bootstrap/js/jquery.scrollto.min.js"></script>
+		<script src="__PUBLIC__/assets/bootstrap/js/jquery.slimscroll.js"></script>
+		
+        <script src="__PUBLIC__/assets/bootstrap/js/jquery.flot.min.js"></script>
+        <script src="__PUBLIC__/assets/bootstrap/js/jquery.flot.resize.min.js"></script>
+        <script src="__PUBLIC__/assets/bootstrap/js/jquery.flot.spline.min.js"></script>
+        <script src="__PUBLIC__/assets/bootstrap/js/jquery.sparkline.min.js"></script>
+        <script src="__PUBLIC__/assets/bootstrap/js/morris.min.js"></script>
+        <script src="__PUBLIC__/assets/bootstrap/js/raphael-2.1.0.min.js"></script>
+        <script src="__PUBLIC__/assets/bootstrap/js/bootstrap-wizard.min.js"></script>
+        <script src="__PUBLIC__/assets/bootstrap/js/select2.min.js"></script>
+		<script src="__PUBLIC__/assets/bootstrap/js/jquery.flot.pie.min.js"></script>
+		<script src="__PUBLIC__/assets/bootstrap/js/css3clock.js"></script>
+		<script src="__PUBLIC__/assets/bootstrap/js/jquery-ui-1.10.3.min.js"></script>
+        <script src="__PUBLIC__/assets/bootstrap/js/moment.min.js"></script>
+        <script src="__PUBLIC__/assets/bootstrap/js/fullcalendar.min.js"></script>
+        <script src="__PUBLIC__/assets/bootstrap/js/custom.js"></script> 
+        <script src="__PUBLIC__/assets/bootstrap/js/dashboard.js"></script>
+		<script>
+		       var m3 = new Morris.Bar({
+        // ID of the element in which to draw the chart.
+        element: 'bar-chart',
+        // Chart data records -- each entry in this array corresponds to a point on
+        // the chart.
+        data: [
+            { y: '1号', a: 30, b: 20 },
+            { y: '2号', a: 75,  b: 65 },
+            { y: '3号', a: 50,  b: 40 },
+            { y: '4号', a: 75,  b: 65 },
+            { y: '5号', a: 50,  b: 40 },
+            { y: '6号', a: 75,  b: 65 },
+            { y: '7号', a: 100, b: 90 },
+            { y: '8号', a: 30, b: 20 },
+            { y: '9号', a: 75,  b: 65 },
+            { y: '10号', a: 50,  b: 40 },
+            { y: '11号', a: 75,  b: 65 },
+            { y: '12号', a: 50,  b: 40 },
+            { y: '13号', a: 75,  b: 65 },
+            { y: '14号', a: 100, b: 90 },
+            { y: '15号', a: 30, b: 20 },
+            { y: '16号', a: 75,  b: 65 },
+            { y: '17号', a: 50,  b: 40 },
+            { y: '18号', a: 75,  b: 65 },
+            { y: '19号', a: 60,  b: 30 },
+            { y: '20号', a: 75,  b: 65 },
+            { y: '21号', a: 100, b: 90 },
+            { y: '22号', a: 30, b: 20 },
+            { y: '23号', a: 75,  b: 65 },
+            { y: '24号', a: 50,  b: 40 },
+            { y: '25号', a: 75,  b: 65 },
+            { y: '26号', a: 90,  b: 45 },
+            { y: '27号', a: 75,  b: 65 },
+            { y: '28号', a: 100, b: 90 },
+            { y: '29号', a: 100, b: 90 },
+            { y: '30号', a: 100, b: 90 }
+        ],
+        xkey: 'y',
+        ykeys: ['a', 'b'],
+        labels: ['录音记录', '录像记录'],
+        lineWidth: '1px',
+        fillOpacity: 0.1,
+        smooth: false,
+        hideHover: true
+    });
+		 
+		</script>
+		
+    </body>
+</html>

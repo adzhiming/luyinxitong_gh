@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+	
+        <title>通道参数</title>
+
+        <link href="__PUBLIC__/assets/bootstrap/css/style.default.css" rel="stylesheet">
+        <link href="__PUBLIC__/assets/bootstrap/css/select2.css" rel="stylesheet" />		
+        <link href="__PUBLIC__/assets/bootstrap/css/jquery.dataTables.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <block name="header">
+           <include file="block/header"/>
+        </block>
+        <section>
+            <div class="mainwrapper">
+			   <block name="left">
+			   <include file="block/left" />
+               </block>
+                
+                <div class="mainpanel">
+                    <div class="contentpanel">
+                       <form name="form1" action="" method="post">
+                        <div class="panel panel-title-head">
+                        <div class="search_banner">
+                             <div class="pull-left col-md-1">
+	                                <a class="btn btn-info btn-large active" href="/home/System/channelParameter">普通参数</a>
+	                          </div> 
+	                          <div class="pull-left col-md-1">
+	                                <a class="btn btn-info btn-large" href="/home/System/paramsChannel">高级参数</a>
+	                          </div>
+                             <div class="pull-left col-md-1">
+	                                <a class="btn btn-info btn-large" href="../Account/userAdd">导出配置</a>
+	                          </div> 
+	                          <div class="pull-left col-md-1">
+	                                <a class="btn btn-info btn-large" href="../Account/userAdd">恢复配置</a>
+	                          </div>
+	                          <div style="clear:both"></div>
+                         </div> 
+                         <ul id="myTab" class="nav nav-tabs">
+                            <foreach name="channeltypelist" item="type">
+								<li <if condition="$type.n_channeltype eq $channeltype"> class="active" </if>>
+									<a href="/home/System/channelParameter/type/{$type.n_channeltype}"  >
+										 {$type.typename}
+									</a>
+								</li>
+							</foreach>
+						</ul>  
+                            <table id="basicTable" class="table table-striped table-bordered responsive">
+                                <thead class="">
+                                    <tr>
+                                        <th>通道编号</th>
+                                        <foreach name="rsTitle" item="titlelist">
+                                           <th>{$titlelist.v_paramsnamech}</th>
+                                           <input name="clo_name[]" type="hidden" value="{$titlelist.v_paramsname}" />
+                                        </foreach>
+                                    </tr>
+                                </thead>
+                         
+                                <tbody>
+                                <foreach name="rs" item="list" key="k">
+                                  <tr role="row" class="odd">
+                                  <if condition="$channeltype eq 33">
+                                       <td>{$list.n_channelno}</td>
+                                       <input name="n_channelno[]" type="hidden" value="{$list.n_channelno}" />
+	                                   <td>{$list.ChnName.v_value}</td>
+	                                   <td>
+	                                   	<input name="{$list.ExtPhoneNumber.v_paramsname}[]"  type="text" value="{$list.ExtPhoneNumber.v_value}">
+	                                   	<input name="hid_{$list.ExtPhoneNumber.v_paramsname}[]" type="hidden" value="{$list.ExtPhoneNumber.v_value}">
+	                                   </td>
+	                                   <td>
+	                                   <div class="ckbox ckbox-primary">  
+                                          <input type="checkbox"  name="{$list.IsVideoChannel.v_paramsname}_{$k}" value="1" <?php if($list['IsVideoChannel']['v_value'] == '1'){echo 'checked';}  ?> id="int_{$list.n_channelno}" />
+                                          <label for="int_{$list.n_channelno}"></label>
+                                       </div>
+                                       <input name="hid_{$list.IsVideoChannel.v_paramsname}_{$k}" type="hidden" value="{$list.IsVideoChannel.v_value}">
+	                                   </td>
+                                  <else/>
+	                                     <td>{$list.n_channelno}</td>
+	                                     <input name="n_channelno[]" type="hidden" value="{$list.n_channelno}" />
+	                                     <td>{$list.ChnName.v_value}</td>
+	                                     <td>
+	                                     	<input type="text" name="{$list.ExtPhoneNumber.v_paramsname}[]" value="{$list.ExtPhoneNumber.v_value}">
+  <input name="hid_{$list.ExtPhoneNumber.v_paramsname}[]" type="hidden" value="{$list.ExtPhoneNumber.v_value}">
+	                                     </td>
+	                                     <td>
+	                                     	<input type="text" name="{$list.CircuitNo.v_paramsname}[]" value="{$list.CircuitNo.v_value}">
+<input name="hid_{$list.CircuitNo.v_paramsname}[]" type="hidden" value="{$list.CircuitNo.v_value}">
+	                                     </td>
+	                                     <td>
+	                                     	<input type="text" name="{$list.ExtPhoneNumber2.v_paramsname}[]" value="{$list.ExtPhoneNumber2.v_value}">
+<input name="hid_{$list.ExtPhoneNumber2.v_paramsname}[]" type="hidden" value="{$list.ExtPhoneNumber2.v_value}">
+	                                     </td>
+	                                     <td><input type="text" value="{$list.CircuitNo2.v_value}"></td>
+	                                     <td>
+		                                     <select name="{$list.IsChkDTMF.v_paramsname}[]">
+		                                        <option value="1" <?php if($list['IsChkDTMF']['v_value'] == '1'){ echo 'selected'; }?>>检测</option>
+		                                        <option value="0" <?php if($list['IsChkDTMF']['v_value'] == '0'){ echo 'selected'; }?>>不检测</option>
+		                                     </select>
+		                                     <input name="hid_{$list.IsChkDTMF.v_paramsname}[]" type="hidden" value="{$list.IsChkDTMF.v_value}">
+	                                     </td>
+	                                     <td>
+		                                     <select name="{$list.RecordMode.v_paramsname}[]">
+		                                        <option value="0" <?php if($list['RecordMode']['v_value'] == '0'){ echo 'selected'; }?>>无</option>
+		                                        <option value="1" <?php if($list['RecordMode']['v_value'] == '1'){ echo 'selected'; }?>>声控</option>
+		                                        <option value="2" <?php if($list['RecordMode']['v_value'] == '2'){ echo 'selected'; }?>>压控</option>
+		                                        <option value="3" <?php if($list['RecordMode']['v_value'] == '3'){ echo 'selected'; }?>>CTI</option>
+		                                        <option value="4" <?php if($list['RecordMode']['v_value'] == '4'){ echo 'selected'; }?>>DRCU</option>
+		                                        <option value="5" <?php if($list['RecordMode']['v_value'] == '5'){ echo 'selected'; }?>>软交换</option>
+		                                        <option value="11" <?php if($list['RecordMode']['v_value'] == '11'){ echo 'selected'; }?>>CDR</option>
+		                                     </select>
+		                                     <input name="hid_{$list.RecordMode.v_paramsname}[]" type="hidden" value="{$list.RecordMode.v_value}">
+	                                     </td>
+	                                     <td>
+		                                     <select name="{$list.ChannelUserDisable.v_paramsname}[]">
+		                                        <option value="1" <?php if($list['ChannelUserDisable']['v_value'] == '1'){ echo 'selected'; }?>>启用</option>
+		                                        <option value="0" <?php if($list['ChannelUserDisable']['v_value'] == '0'){ echo 'selected'; }?>>禁用</option>
+		                                     </select>
+		                                     <input name="hid_{$list.ChannelUserDisable.v_paramsname}[]" type="hidden" value="{$list.ChannelUserDisable.v_value}">
+	                                     </td>
+	                               </if>      
+                                  </tr>
+                                 </foreach> 
+                                </tbody>
+                            </table>
+                            
+                        </div><!-- panel -->
+                        <div class=" col-md-12">
+	                                <input class="btn btn-info btn-large" type="submit" value="提交参数">
+	                    </div> 
+                        
+                        </form>    
+                           
+                        </div><!-- panel -->
+                      
+                        
+                    </div><!-- contentpanel -->
+                </div><!-- mainpanel --><!-- mainpanel -->
+            </div><!-- mainwrapper -->
+            
+            
+        </section>
+		
+        <script src="__PUBLIC__/assets/bootstrap/js/jquery-1.11.1.min.js"></script>
+        <script src="__PUBLIC__/assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="__PUBLIC__/assets/bootstrap/js/custom.js"></script>
+	
+		
+    </body>
+</html>

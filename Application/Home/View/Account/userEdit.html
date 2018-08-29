@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+	
+        <title>用户编辑</title>
+
+        <link href="__PUBLIC__/assets/bootstrap/css/style.default.css" rel="stylesheet">
+        <link href="__PUBLIC__/assets/bootstrap/css/select2.css" rel="stylesheet" />		
+        <link href="__PUBLIC__/assets/bootstrap/css/jquery.dataTables.min.css" rel="stylesheet">
+        <style type="text/css">
+ .Alertmessage{
+	text-align: center;
+    color: red;
+ }
+       </style>
+    </head>
+
+    <body>
+        <block name="header">
+           <include file="block/header"/>
+        </block>
+        <section>
+            <div class="mainwrapper">
+			   <block name="left">
+			   <include file="block/left" />
+               </block>
+                
+                <div class="mainpanel">
+                    <div class="contentpanel">
+                       
+                       	<div class="col-md-12">
+                                <form id="basicForm" action="form-validation.html">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <div class="panel-btns">
+                                            <a href="#" class="panel-minimize tooltips" data-toggle="tooltip" title="Minimize Panel"><i class="fa fa-minus"></i></a>
+                                            <a href="#" class="panel-close tooltips" data-toggle="tooltip" title="Close Panel"><i class="fa fa-times"></i></a>
+                                        </div><!-- panel-btns -->
+                                        <h4 class="panel-title">用户编辑</h4>
+                                    </div><!-- panel-heading -->
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">用户名 <span class="asterisk">*</span></label>
+                                                <div class="col-sm-6">
+                                                    <input type="text" id="username" name="username" value="{$accountInfo.v_accountname}" <if condition="$accountInfo.v_accountname neq ''">readonly </if> class="form-control" placeholder="用户名" required />
+                                                </div>
+                                            </div><!-- form-group -->
+                                          
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">密码 <span class="asterisk">*</span></label>
+                                                <div class="col-sm-6">
+                                                    <input type="email" id="password" name="password" value="{$accountInfo.v_password}" class="form-control" placeholder="密码" required />
+                                                </div>
+                                            </div><!-- form-group -->
+                                          
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">用户权限</label>
+                                                <div class="col-sm-6">
+                                                      <div class="ckbox ckbox-primary col-sm-2">
+                                                        <input type="checkbox" value="1" <if condition="$accountInfo.chaxun eq '1'">checked </if> id="int_search" name="can">
+	                                                    <label for="int_search">查询</label>
+	                                                  </div>
+	                                                  <div class="ckbox ckbox-primary col-sm-2">  
+	                                                    <input type="checkbox" value="1" id="int_del" name="can" <if condition="$accountInfo.shanchu eq '1'">checked </if>>
+	                                                    <label for="int_del">删除</label>
+	                                                    </div>
+	                                                    <div class="ckbox ckbox-primary col-sm-2">
+	                                                    <input type="checkbox" value="1" id="int_manage" name="can" <if condition="$accountInfo.guanli eq '1'">checked </if>>
+	                                                    <label for="int_manage">管理</label>
+	                                                    </div>
+	                                                    <div class="ckbox ckbox-primary col-sm-2">
+	                                                    <input type="checkbox" value="1" id="int_lock" name="can" <if condition="$accountInfo.suoding eq '1'">checked </if>>
+	                                                    <label for="int_lock">锁定</label>
+	                                                    </div>
+                                                    </div>
+                                              </div><!-- form-group -->
+                                            
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">有权号码<span class="asterisk">*</span></label>
+                                                <div class="col-sm-6">
+                                                    <textarea rows="5" id="privilege" name="privilege"  class="form-control" placeholder="有权号码，指用户有权查看录音的号码。此项留空则可查看所有号码的录音。 
+多个号码用逗号隔开，系统将自动过滤非数字字符。" required>{$accountInfo.v_ext}</textarea>
+                                                </div>
+                                            </div><!-- form-group -->
+                                            
+                                            <div class="form-group">
+	                                            <label class="col-sm-2 control-label">工作站<span class="asterisk">*</span></label>
+	                                            <div class="col-sm-6">
+	                                            <foreach name="station" item="list">
+	                                                <div class="ckbox ckbox-primary">
+	                                                    <input type="checkbox" id="site_{$list.n_sid}" class="selectStation" value="{$list.n_sid}" name="site" <if condition="$list.selected eq '1'">checked </if> >
+	                                                    <label for="site_{$list.n_sid}">{$list.v_sname}</label>
+	                                                </div><!-- rdio -->
+	                                             </foreach>
+	                                             <div class="ckbox ckbox-primary">
+	                                                    <input type="checkbox" value="f"  id="checkSiteAll" name="checkSiteAll">
+	                                                    <label for="checkSiteAll">全选/全否</label>
+	                                              </div>   
+	                                                
+	                                            </div>
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">备注信息<span class="asterisk">*</span></label>
+                                                <div class="col-sm-6">
+                                                    <textarea rows="5" id="remark" name="remark" class="form-control" placeholder="备注信息" required></textarea>
+                                                </div>
+                                            </div><!-- form-group -->
+                                        </div><!-- row -->
+                                        <div class="modal-footer col-sm-6">
+					        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					        <button type="button" class="btn btn-primary update">更新</button>
+					      </div>
+                                    </div><!-- panel-body -->
+                           
+                                </div><!-- panel -->
+                                </form>
+                                
+                            </div><!-- col-md-6 -->
+                           
+                            
+					      
+                        </div><!-- panel -->
+                      
+                        
+                    </div><!-- contentpanel -->
+                </div><!-- mainpanel --><!-- mainpanel -->
+            </div><!-- mainwrapper -->
+            
+            
+        <!-- 告警模态框 -->
+		<div class="modal fade" id="alertModel" tabindex="-1" role="dialog" aria-labelledby="myAlert">
+		  <div class="modal-dialog" role="document" style="width:450px">
+		    <div class="modal-content" >
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myAlert" style="text-align: center;">提示</h4>
+		      </div>
+		      <div class="modal-body">
+		        <div class="inner">
+		        	<h4 class="Alertmessage"> </h4>
+		        </div>
+		        
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+		        <button type="button" class="btn btn-primary ok">确定</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>            
+        
+        </section>
+		
+        <script src="__PUBLIC__/assets/bootstrap/js/jquery-1.11.1.min.js"></script>
+        <script src="__PUBLIC__/assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="__PUBLIC__/assets/bootstrap/js/custom.js"></script>
+        
+
+
+<script type="text/javascript">
+$(document).ready( function () {
+
+
+  $("#checkSiteAll").click(function() {
+	    var state = $("#checkSiteAll").prop("checked");
+	    if(state == true) {
+	        $(".selectStation").prop("checked", "checked");
+	    } else {
+	        $(".selectStation").prop("checked", "");
+	    }
+	});
+	
+ $('.update').click(function(){
+	   var accountid ="{$accountInfo.v_accountid}"
+	   var username = $('#username').val()
+	   var password = $('#password').val()
+	   var privilege = $('#privilege').val();
+	   var remark = $('#remark').val();
+       var canItems = -1
+       var val = 0 
+    	   $("input[name='can']").each(function(){
+               if($(this).is(":checked"))
+               {
+            	   val = 1
+               }
+               else{
+            	   val = 0
+               }
+               
+               if(canItems ==  -1){
+            	   canItems = val
+			   }
+			  else{
+				  canItems = canItems +","+ val
+				}
+             });
+       
+       var stationid =""
+    		 $('input[name="site"]:checked').each(function(){ 
+    			 if(stationid ==""){
+    				 stationid = $(this).val()
+    			 }
+    			 else{
+    				 stationid = stationid +","+ $(this).val()
+    			 }
+       }); 
+       if(username ==''){
+    	   $('#alertModel').modal('show');
+   		   $('.Alertmessage').html('用户名不能为空') 
+   		   return;
+       }
+       if(password ==''){
+    	   $('#alertModel').modal('show');
+   		   $('.Alertmessage').html('密码不能为空') 
+   		   return;
+       }
+      var url = "userEdit" 
+	  $.ajax({
+				type:"POST",
+				url:url,
+				data:{
+					accountid:accountid,username:username,password:password,canItems:canItems,privilege:privilege,stationid:stationid,remark:remark	
+				},
+				success: function(data){
+					if(data.code){
+						$('.Alertmessage').css("color",'#1fb5ad');
+					}
+					else{
+						$('.Alertmessage').css("color",'red');
+					}
+				    $('#alertModel').modal('show');
+		   		    $('.Alertmessage').html(data.message)
+				}
+	 })
+ })	
+})	
+
+$('.ok').click(function(){
+   $('#alertModel').modal('hide');
+   window.location.href="/home/Account/userManage"
+}) 
+</script>        
+		
+		
+    </body>
+</html>

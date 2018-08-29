@@ -1,0 +1,1377 @@
+[ 2018-08-27T11:39:12+08:00 ] 127.0.0.1 /home/System/systemParameter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `tab_sys_paramssystem` [ RunTime:0.0430s ]
+SQL: SELECT * FROM `tab_sys_paramssystem` WHERE ( V_ParamsName = 'Sys_Version' ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tab_sys_paramssystem` WHERE ( N_ModifyLevel< 2 ) ORDER BY V_ParamsNameCh  [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: AccountSub H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\61540ef09f31b1ed50902477c79a51de.php 第 142 行.
+NOTIC: [8] Undefined variable: showFile H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\61540ef09f31b1ed50902477c79a51de.php 第 435 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-27T11:39:15+08:00 ] 127.0.0.1 /home/Login/login_out
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-27T11:39:16+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-27T11:43:41+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-27T11:43:51+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-27T11:44:24+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-27T11:44:27+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-27T11:44:44+08:00 ] 127.0.0.1 /home/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0390s ]
+NOTIC: [8] Undefined index: password H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 25 行.
+NOTIC: [8] Undefined index: username H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 26 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'admin' AND `V_AccountName` = null LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-08-27T11:45:51+08:00 ] 127.0.0.1 /home/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0220s ]
+NOTIC: [8] Undefined index: password H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 25 行.
+NOTIC: [8] Undefined index: username H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 26 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'admin' AND `V_AccountName` = null LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-08-27T11:46:27+08:00 ] 127.0.0.1 /home/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0330s ]
+NOTIC: [8] Undefined index: password H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 25 行.
+NOTIC: [8] Undefined index: username H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 26 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'admin' AND `V_AccountName` = null LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-08-27T11:47:23+08:00 ] 127.0.0.1 /home/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0240s ]
+NOTIC: [8] Undefined index: password H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 25 行.
+NOTIC: [8] Undefined index: username H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 26 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'admin' AND `V_AccountName` = null LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-08-27T11:47:43+08:00 ] 127.0.0.1 /home/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0300s ]
+NOTIC: [8] Undefined index: password H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 25 行.
+NOTIC: [8] Undefined index: username H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 26 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'admin' AND `V_AccountName` = null LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-08-27T11:48:22+08:00 ] 127.0.0.1 /home/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0300s ]
+NOTIC: [8] Undefined index: password H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 25 行.
+NOTIC: [8] Undefined index: username H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 26 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'admin' AND `V_AccountName` = null LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-08-27T11:49:26+08:00 ] 127.0.0.1 /home/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0250s ]
+NOTIC: [8] Undefined index: password H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 25 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'admin' AND `V_AccountName` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-08-27T11:53:24+08:00 ] 127.0.0.1 /home/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0220s ]
+NOTIC: [8] Undefined index: password H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 25 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'admin' AND `V_AccountName` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-27T11:53:25+08:00 ] 127.0.0.1 /home/login/record/recordList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:record
+
+[ 2018-08-27T11:53:40+08:00 ] 127.0.0.1 /home/login/record/recordList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:record
+
+[ 2018-08-27T11:53:45+08:00 ] 127.0.0.1 /home/login/record/recordList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:record
+
+[ 2018-08-27T11:53:53+08:00 ] 127.0.0.1 /home/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0300s ]
+NOTIC: [8] Undefined index: password H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 25 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'admin' AND `V_AccountName` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-27T11:53:55+08:00 ] 127.0.0.1 /home/record/recordList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_paramssystem` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `tab_sys_paramssystem` WHERE ( V_ParamsName = 'Sys_Version' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tab_drcu_circfg` [ RunTime:0.0300s ]
+SQL: SELECT distinct chno FROM `tab_drcu_circfg` ORDER BY dispchno  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `tab_sys_paramschannel` [ RunTime:0.0230s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='0' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='1' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='2' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='3' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='4' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='5' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='6' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='7' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='8' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='9' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='11' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='12' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='13' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='14' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='15' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='16' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='17' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='18' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='19' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='20' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='21' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='22' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='23' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='24' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='25' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='26' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='27' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='28' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='29' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='30' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='31' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10000' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10001' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10002' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10003' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10004' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10005' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10006' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10007' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: AccountSub H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 171 行.
+NOTIC: [8] Undefined variable: SystemSub H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 178 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-27T11:53:57+08:00 ] 127.0.0.1 /index.php/Home/record/recordList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_paramssystem` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `tab_sys_paramssystem` WHERE ( V_ParamsName = 'Sys_Version' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tab_rec_cdrinfo` [ RunTime:0.0270s ]
+SQL: SHOW COLUMNS FROM `tab_rec_bakinfo` [ RunTime:0.0280s ]
+NOTIC: [8] Undefined index: sEcho H:\www\luyinxitong_gh\Application\Home\Controller\RecordController.class.php 第 36 行.
+NOTIC: [8] Undefined variable: where H:\www\luyinxitong_gh\Application\Home\Controller\RecordController.class.php 第 44 行.
+SQL: SELECT count(*) cnt FROM `tab_rec_cdrinfo` WHERE (  D_StartTime between '2018-08-27 00:00:00' and '2018-08-27 23:59:59'  and  (unix_timestamp(D_StopTime)-unix_timestamp(D_StartTime))>=1  ) LIMIT 1   [ RunTime:0.0100s ]
+SQL: SELECT count(*) cnt FROM `tab_rec_bakinfo` WHERE (  D_StartTime between '2018-08-27 00:00:00' and '2018-08-27 23:59:59'  and  (unix_timestamp(D_StopTime)-unix_timestamp(D_StartTime))>=1  ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT `N_SN`,`N_ChannelID`,`D_StartTime`,`D_StopTime`,`V_VoiceFile`,`N_FileFormat`,`N_CallDirection`,`V_Caller`,`V_Called`,`V_Ext`,`N_BackUp`,`N_Lock`,`N_Alarm`,`N_AvoidRec`,`N_DeleteFlag`,`N_Locker`,`V_Path`,`V_NetPath`,`V_Diverter`,`V_Diverted`,`N_IsTalk`,`ReMark` FROM `tab_rec_cdrinfo` WHERE (  D_StartTime between '2018-08-27 00:00:00' and '2018-08-27 23:59:59'  and  (unix_timestamp(D_StopTime)-unix_timestamp(D_StartTime))>=1  ) ORDER BY D_StartTime desc LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2018-08-27T11:54:58+08:00 ] 127.0.0.1 /home/Login/login_out
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-27T11:54:59+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-27T11:55:05+08:00 ] 127.0.0.1 /home/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0330s ]
+NOTIC: [8] Undefined index: password H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 25 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'admin' AND `V_AccountName` = 'admin' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-08-27T11:55:06+08:00 ] 127.0.0.1 /home/record/recordList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `tab_sys_paramssystem` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `tab_sys_paramssystem` WHERE ( V_ParamsName = 'Sys_Version' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tab_drcu_circfg` [ RunTime:0.0210s ]
+SQL: SELECT distinct chno FROM `tab_drcu_circfg` ORDER BY dispchno  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tab_sys_paramschannel` [ RunTime:0.0200s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='0' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='1' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='2' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='3' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='4' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='5' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='6' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='7' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='8' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='9' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='11' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='12' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='13' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='14' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='15' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='16' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='17' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='18' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='19' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='20' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='21' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='22' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='23' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='24' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='25' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='26' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='27' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='28' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='29' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='30' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='31' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10000' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10001' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10002' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10003' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10004' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10005' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10006' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10007' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: AccountSub H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 171 行.
+NOTIC: [8] Undefined variable: SystemSub H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 178 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-27T11:55:07+08:00 ] 127.0.0.1 /index.php/Home/record/recordList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_paramssystem` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `tab_sys_paramssystem` WHERE ( V_ParamsName = 'Sys_Version' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tab_rec_cdrinfo` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `tab_rec_bakinfo` [ RunTime:0.0180s ]
+NOTIC: [8] Undefined index: sEcho H:\www\luyinxitong_gh\Application\Home\Controller\RecordController.class.php 第 36 行.
+NOTIC: [8] Undefined variable: where H:\www\luyinxitong_gh\Application\Home\Controller\RecordController.class.php 第 44 行.
+SQL: SELECT count(*) cnt FROM `tab_rec_cdrinfo` WHERE (  D_StartTime between '2018-08-27 00:00:00' and '2018-08-27 23:59:59'  and  (unix_timestamp(D_StopTime)-unix_timestamp(D_StartTime))>=1  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT count(*) cnt FROM `tab_rec_bakinfo` WHERE (  D_StartTime between '2018-08-27 00:00:00' and '2018-08-27 23:59:59'  and  (unix_timestamp(D_StopTime)-unix_timestamp(D_StartTime))>=1  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `N_SN`,`N_ChannelID`,`D_StartTime`,`D_StopTime`,`V_VoiceFile`,`N_FileFormat`,`N_CallDirection`,`V_Caller`,`V_Called`,`V_Ext`,`N_BackUp`,`N_Lock`,`N_Alarm`,`N_AvoidRec`,`N_DeleteFlag`,`N_Locker`,`V_Path`,`V_NetPath`,`V_Diverter`,`V_Diverted`,`N_IsTalk`,`ReMark` FROM `tab_rec_cdrinfo` WHERE (  D_StartTime between '2018-08-27 00:00:00' and '2018-08-27 23:59:59'  and  (unix_timestamp(D_StopTime)-unix_timestamp(D_StartTime))>=1  ) ORDER BY D_StartTime desc LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2018-08-27T11:56:22+08:00 ] 127.0.0.1 /home/Login/login_out
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-08-27T11:56:23+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-27T11:56:31+08:00 ] 127.0.0.1 /home/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0320s ]
+NOTIC: [8] Undefined index: password H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 25 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'add' AND `V_AccountName` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-08-27T11:56:32+08:00 ] 127.0.0.1 /home/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0330s ]
+NOTIC: [8] Undefined index: password H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 25 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'add' AND `V_AccountName` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-08-27T11:56:45+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-27T11:56:51+08:00 ] 127.0.0.1 /home/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0290s ]
+NOTIC: [8] Undefined index: password H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 25 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'addd' AND `V_AccountName` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-08-27T11:57:28+08:00 ] 127.0.0.1 /home/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0170s ]
+NOTIC: [8] Undefined index: password H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 25 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'addd' AND `V_AccountName` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-08-27T11:58:20+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-27T11:58:40+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2018-08-27T11:58:49+08:00 ] 127.0.0.1 /home/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0290s ]
+NOTIC: [8] Undefined index: password H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 25 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'admin' AND `V_AccountName` = 'adminn' LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-08-27T11:58:49+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-27T11:59:02+08:00 ] 127.0.0.1 /home/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0320s ]
+NOTIC: [8] Undefined index: password H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 25 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'adddd' AND `V_AccountName` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-08-27T11:59:02+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-27T12:00:11+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-27T12:00:18+08:00 ] 127.0.0.1 /home/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0230s ]
+NOTIC: [8] Undefined index: password H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 25 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'aaaa' AND `V_AccountName` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-08-27T12:01:10+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-27T12:01:17+08:00 ] 127.0.0.1 /home/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0290s ]
+NOTIC: [8] Undefined index: password H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 25 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'adds' AND `V_AccountName` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-08-27T12:01:19+08:00 ] 127.0.0.1 /home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-27T12:01:31+08:00 ] 127.0.0.1 /home/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `tab_sys_accountinfo` [ RunTime:0.0320s ]
+NOTIC: [8] Undefined index: password H:\www\luyinxitong_gh\Application\Home\Controller\LoginController.class.php 第 25 行.
+SQL: SELECT * FROM `tab_sys_accountinfo` WHERE `V_Password` = 'admin' AND `V_AccountName` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-08-27T12:01:32+08:00 ] 127.0.0.1 /home/record/recordList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_paramssystem` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `tab_sys_paramssystem` WHERE ( V_ParamsName = 'Sys_Version' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tab_drcu_circfg` [ RunTime:0.0180s ]
+SQL: SELECT distinct chno FROM `tab_drcu_circfg` ORDER BY dispchno  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tab_sys_paramschannel` [ RunTime:0.0180s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='0' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='1' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='2' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='3' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='4' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='5' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='6' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='7' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='8' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='9' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='11' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='12' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='13' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='14' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='15' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='16' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='17' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='18' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='19' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='20' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='21' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='22' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='23' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='24' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='25' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='26' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='27' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='28' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='29' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='30' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='31' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10000' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10001' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10002' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10003' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10004' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10005' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10006' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `V_Value` FROM `tab_sys_paramschannel` WHERE ( N_ChannelNo='10007' and V_ParamsName ='ChnName' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: AccountSub H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 171 行.
+NOTIC: [8] Undefined variable: SystemSub H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 178 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+NOTIC: [8] Undefined index: n_channelno H:\www\luyinxitong_gh\Application\Runtime\Cache\Home\5bcd071c9e296a77304e9aed68250968.php 第 311 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-27T12:01:34+08:00 ] 127.0.0.1 /index.php/Home/record/recordList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tab_sys_paramssystem` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `tab_sys_paramssystem` WHERE ( V_ParamsName = 'Sys_Version' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tab_rec_cdrinfo` [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `tab_rec_bakinfo` [ RunTime:0.0190s ]
+NOTIC: [8] Undefined index: sEcho H:\www\luyinxitong_gh\Application\Home\Controller\RecordController.class.php 第 36 行.
+NOTIC: [8] Undefined variable: where H:\www\luyinxitong_gh\Application\Home\Controller\RecordController.class.php 第 44 行.
+SQL: SELECT count(*) cnt FROM `tab_rec_cdrinfo` WHERE (  D_StartTime between '2018-08-27 00:00:00' and '2018-08-27 23:59:59'  and  (unix_timestamp(D_StopTime)-unix_timestamp(D_StartTime))>=1  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT count(*) cnt FROM `tab_rec_bakinfo` WHERE (  D_StartTime between '2018-08-27 00:00:00' and '2018-08-27 23:59:59'  and  (unix_timestamp(D_StopTime)-unix_timestamp(D_StartTime))>=1  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `N_SN`,`N_ChannelID`,`D_StartTime`,`D_StopTime`,`V_VoiceFile`,`N_FileFormat`,`N_CallDirection`,`V_Caller`,`V_Called`,`V_Ext`,`N_BackUp`,`N_Lock`,`N_Alarm`,`N_AvoidRec`,`N_DeleteFlag`,`N_Locker`,`V_Path`,`V_NetPath`,`V_Diverter`,`V_Diverted`,`N_IsTalk`,`ReMark` FROM `tab_rec_cdrinfo` WHERE (  D_StartTime between '2018-08-27 00:00:00' and '2018-08-27 23:59:59'  and  (unix_timestamp(D_StopTime)-unix_timestamp(D_StartTime))>=1  ) ORDER BY D_StartTime desc LIMIT 0,10   [ RunTime:0.0010s ]
+
