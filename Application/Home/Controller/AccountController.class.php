@@ -74,16 +74,23 @@ class AccountController extends AuthController {
     }
     
     public function phoneBook(){
+        header("Content-Type: text/html;charset=utf-8");
+
         if(IS_AJAX){
             $start = isset($_REQUEST['start'])?$_REQUEST['start']:0;
             $length = isset($_REQUEST['length'])?$_REQUEST['length']:10;
-            $sName = $this->getParam("sName");
+            $sName = $this->getParam("sName"); 
             $sNum = $this->getParam("sNum");
+            $keyword = $this->getParam("keyword");
             $sName = MySQLFixup($sName);
             $sNum = MySQLFixup($sNum); 
             $where="1=1 ";
             if($sName !=""){
-                $where.=" and a.contactname like '%".$sName."%' ";
+                //$where.=" and from_base64(a.contactname) like '%".$sName."%' ";
+            }
+            if($keyword !=""){
+                 // M('dept')->where("from_base64(a.category) like '%".$keyword."%'")->select();
+                 // $where.=" and (from_base64(a.district) like '%".$keyword."%' or from_base64(a.category) like '%".$keyword."%') ";
             }
             if($sNum !=""){
                 $where.=" and (a.Mobile like '%".$sNum."%' or a.OfficeNum like '%".$sNum."%'
@@ -98,9 +105,18 @@ class AccountController extends AuthController {
             $total = $cnt['cnt'];
             $rs = M('phonebook a')->join("tab_dept b on a.deptid=b.deptid","left")->field($field)->where($where)->limit($start,$length)->select();
             //echo M()->getLastSql();
-            if($rs){
+            if($rs){ 
                 foreach ($rs as $k=>$v){
-
+                    if(!empty($v['contactname'])){ 
+                         $contactname = iconv("gb2312//IGNORE","utf-8",base64_decode($v['contactname'],'gb2312'));
+                         $rs[$k]['contactname'] = empty($contactname)?$v['contactname']:$contactname;
+                    }
+                    if(!empty($v['district'])){ 
+                         $rs[$k]['district'] = iconv("gb2312//IGNORE","utf-8",base64_decode($v['district'],'gb2312'));
+                    }
+                    if(!empty($v['deptname'])){ 
+                          $rs[$k]['deptname'] = iconv("gb2312//IGNORE","utf-8",base64_decode($v['deptname'],'gb2312'));
+                    }
                     if($v['sex'] == 1){
                         $rs[$k]['xingbie'] = '男';
                     }
@@ -112,6 +128,7 @@ class AccountController extends AuthController {
                     }
                 }
             }
+            //var_dump($rs);
             $output['aaData'] = $rs;
             $output['iTotalDisplayRecords'] = $total;    //如果有全局搜索，搜索出来的个数
             $output['iTotalRecords'] = $total; //总共有几条数据
@@ -122,25 +139,33 @@ class AccountController extends AuthController {
         $this->assign("CurrentPage",'phoneBook');
         $this->display();
     }
-
+    public function valuedesc64($val,$type='utf-8'){ 
+        header("Content-Type: text/html;charset={$type}");
+        return base64_decode($val,$type);
+    } 
     //同步号簿
     public function synPhoneBook(){ 
         if(IS_POST){
+             
             $AppResult = new AppResult();
             $rs = M("new_phonebook")->where('is_update = 0')->order('name')->select();
             if($rs){
-                foreach ($rs as $k => $v) {
+                foreach ($rs as $k => $v) { 
+
                     $upd = array();
                     $arr = explode(",",$v['number']);
+                    $arr = array_unique($arr);
                     foreach ($arr as $key => $val) {
                         $i = $key+1;
                         $index = "phone".$i;
                         $upd[$index] = $val;
 
                     }
-                    
+                    $upd['contactName'] = $v['name'];
+                    $upd['district'] = $v['district'];
+                    $upd['category'] = $v['category'];
                      //先判断部门
-                    $dep = $v['district'].$v['category'].$v['unit'];
+                    $dep = $v['unit'];
                     if($dep){
                         $find = M("dept")->where("DeptName = '{$dep}'")->find();
                         if($find)
@@ -169,8 +194,10 @@ class AccountController extends AuthController {
                            }
                         }
                     }
+
                 }
             }
+            
             $AppResult->code = 1;
             $AppResult->message = "号簿同步成功";
             $AppResult->data = "";
@@ -369,7 +396,7 @@ class AccountController extends AuthController {
         if(empty($rs)){
            $this->error("非法操作");exit;
         }
-       
+       $rs['contactname'] = iconv("gb2312//IGNORE","utf-8",base64_decode($rs['contactname'],'gb2312'));
         if(IS_POST || IS_AJAX){ 
            $contactname = $this->getParam("contactname");
            $pid = $this->getParam("pid");
@@ -397,6 +424,9 @@ class AccountController extends AuthController {
            exit;
         }
         $dept = M("dept")->order('DeptID')->select();
+        foreach ($dept as $key => $value) {
+            $dept[$key]['deptname'] = iconv("gb2312//IGNORE","utf-8",base64_decode($value['deptname'],'gb2312'));
+        }
         $this->assign("dept",$dept);
         $this->assign("rs",$rs);
         $this->assign("CurrentPage",'phoneBook');
@@ -461,6 +491,7 @@ class AccountController extends AuthController {
             $rs = M('dept')->field($field)->where($where)->limit($start,$length)->select();
             if($rs){
                 foreach ($rs as $k=>$v){
+                    $rs[$k]['deptname'] = iconv("gb2312//IGNORE","utf-8",base64_decode($v['deptname'],'gb2312'));
                     $Managestr = "";
                     $Managestr .= " <a href='departMentEdit?depID={$v['deptid']}'>编辑</a>　|　";
                     $Managestr .=  "<a href=\"javascript:del('{$v['deptid']}','{$v['deptname']}')\">删除</a>";
@@ -481,6 +512,8 @@ class AccountController extends AuthController {
         if(IS_POST){
             $AppResult = new AppResult();
             $departName = $this->getParam("departName");
+            $departName = iconv("utf-8//IGNORE","gb2312",$departName); 
+            $departName =  base64_encode($departName);
             $rs = M('dept')->where("DeptName='".MySQLFixup($departName)."'")->find();
             if(!$rs){
                 $data = array();
@@ -517,11 +550,13 @@ class AccountController extends AuthController {
         }
         if(IS_POST){
             $depName = $this->getParam("depName");
+            $depName = trim($depName);
             if(empty($depName)){
                 JS_alert("请部门名称");
             }
             $data = array();
-            $data['DeptName'] = $depName;
+            $depName = iconv("utf-8//IGNORE","gb2312",$depName); 
+            $data['DeptName'] = base64_encode($depName);
             $rs = M('dept')->where("DeptID = '{$depID}'")->save($data);
             if(false !== $rs){
                 $this->success("更新成功");
@@ -529,7 +564,7 @@ class AccountController extends AuthController {
             }
         }
         $rs = M('dept')->where("DeptID = '{$depID}'")->find();
-        
+        $rs['deptname'] = iconv("gb2312//IGNORE","utf-8",base64_decode($rs['deptname'],'gb2312'));
         $this->assign("rs",$rs);
         $this->assign("CurrentPage",'departMent');
         $this->display();
@@ -578,7 +613,7 @@ class AccountController extends AuthController {
         Vendor("PHPExcel.PHPExcel.Reader.Excel2007.php");
         Vendor("PHPExcel.PHPExcel.Reader.Excel5");
         Vendor("PHPExcel.PHPExcel.IOFactory");
-        
+         
         $excel = new \PHPExcel();
         
         //指定工作簿
@@ -590,41 +625,60 @@ class AccountController extends AuthController {
         $excel->getActiveSheet()->getColumnDimension('D')->setWidth('15');
         $excel->getActiveSheet()->getColumnDimension('E')->setWidth('15');
         $excel->getActiveSheet()->getColumnDimension('F')->setWidth('15');
+        $excel->getActiveSheet()->getColumnDimension('G')->setWidth('15');
+        $excel->getActiveSheet()->getColumnDimension('H')->setWidth('15');
         
         
         $excel->getActiveSheet()->setTitle('电话号簿'); //excel标题
         //设置行标题
-        $excel->getActiveSheet()->setCellValue("A1", "姓名");         
-        $excel->getActiveSheet()->setCellValue("B1", "性别");
-        $excel->getActiveSheet()->setCellValue("C1", "移动电话");
-        $excel->getActiveSheet()->setCellValue("D1", "办公电话");
-        $excel->getActiveSheet()->setCellValue("E1", "其他电话");
-        $excel->getActiveSheet()->setCellValue("F1", "备注");
-
+        $excel->getActiveSheet()->setCellValue("A1", "名称");         
+        $excel->getActiveSheet()->setCellValue("B1", "地区");
+        $excel->getActiveSheet()->setCellValue("C1", "单位");
+        $excel->getActiveSheet()->setCellValue("D1", "本地电话1");
+        $excel->getActiveSheet()->setCellValue("E1", "本地电话2");
+        $excel->getActiveSheet()->setCellValue("F1", "本地电话3");
+        $excel->getActiveSheet()->setCellValue("G1", "本地电话4");
+        $excel->getActiveSheet()->setCellValue("H1", "备注");
+         
          
         //获取并填充数据
-        $rs = M('phonebook')->order('contactname')->select();
+        $rs = M('phonebook p')->join("tab_dept d on p.deptid = d.deptid","left")->field("p.*,d.deptname")->order('p.contactname')->select();
         
+
         
         if($rs){
             $i=1;
             foreach ($rs as $key => $value) {
                 $i++;
-                $excel->getActiveSheet()->setCellValue("A".$i,$value["contactname"]);
-                $excel->getActiveSheet()->setCellValue("B".$i,$value["sex"]);
-                $excel->getActiveSheet()->setCellValue("C".$i,$value["mobile"]);
-                $excel->getActiveSheet()->setCellValue("D".$i,$value["officenum"]);
-                $excel->getActiveSheet()->setCellValue("E".$i,$value["othernum"]);
-                $excel->getActiveSheet()->setCellValue("F".$i,$value["remark"]);
+                $contactname = iconv("gb2312//IGNORE","utf-8",base64_decode($value['contactname'],'gb2312'));
+                $contactname = $contactname==true?$contactname:'';
+                $district = iconv("gb2312//IGNORE","utf-8",base64_decode($value['district'],'gb2312'));
+                $district = $district==true?$district:'';
+                $deptname = iconv("gb2312//IGNORE","utf-8",base64_decode($value['deptname'],'gb2312'));
+                $deptname = $deptname==true?$deptname:'';
+                $excel->getActiveSheet()->setCellValue("A".$i,$contactname);
+                $excel->getActiveSheet()->setCellValue("B".$i,$district);
+                $excel->getActiveSheet()->setCellValue("C".$i,$deptname);
+                $excel->getActiveSheet()->setCellValue("D".$i,$value["mobile"]);
+                $excel->getActiveSheet()->setCellValue("E".$i,$value["officenum"]);
+                $excel->getActiveSheet()->setCellValue("F".$i,$value["othernum"]);
+                $excel->getActiveSheet()->setCellValue("G".$i,$value["homenum"]);
+                $excel->getActiveSheet()->setCellValue("H".$i,$value["remark"]);
             }
         } 
         
       
-        $title ='电话号簿';
+        $title ='phonebook';
         $date = date('Y-m-d',time());
         
-        $data = array();
-        $fileurl = "Uploads/phoneBook/". $title."_".$date.".xls";
+        $data = array(); 
+
+        $dir = iconv("UTF-8", "GBK", "Uploads/phoneBook");
+        if (!file_exists($dir)){
+            mkdir ($dir,0777,true); 
+        }
+ 
+        $fileurl = $dir."/". $title."_".$date.".xls";
        
         $filename = iconv('utf-8', "gb2312", $fileurl);
         

@@ -10,6 +10,7 @@
 	
         <title>录音系统</title>
         <link href="__PUBLIC__/assets/bootstrap/css/style.default.css" rel="stylesheet">
+        <link href="__PUBLIC__/assets/bootstrap/css/font-awesome.min.css" rel="stylesheet">
         <link href="__PUBLIC__/assets/bootstrap/css/select2.css" rel="stylesheet" />		
         <link href="__PUBLIC__/assets/bootstrap/css/jquery.dataTables.min.css" rel="stylesheet">
         <link href="__PUBLIC__/assets/bootstrap/css/bootstrap-datetimepicker.css" rel="stylesheet">
@@ -354,6 +355,39 @@
         </div>
 
 
+        <!-- 翻译内容模态框 -->
+        <div class="modal fade" id="beizhuModel" tabindex="-1" role="dialog" aria-labelledby="mybeizhu">
+          <div class="modal-dialog" role="document" style="width:800px">
+            <div class="modal-content" >
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="mybeizhu" style="text-align: center;">备注内容</h4>
+              </div>
+              <div class="modal-body">
+                <div class="inner">
+                    <div class="loadEffect">
+                         <span></span>
+                         <span></span>
+                         <span></span>
+                         <span></span>
+                         <span></span>
+                         <span></span>
+                         <span></span>
+                         <span></span>
+                     </div> 
+                     <div><textarea id='bznr' name='bznr' rows="3" cols="105"></textarea></div>
+                     
+                </div>
+                
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary save" data-remarkid="" data-n_backup="">保存</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <script src="__PUBLIC__/assets/bootstrap/js/jquery-1.11.1.min.js"></script>
         <script src="__PUBLIC__/assets/bootstrap/js/bootstrap.min.js"></script>
         <script src="__PUBLIC__/assets/bootstrap/js/jquery.datatables.min.js"></script>
@@ -655,6 +689,32 @@ function vplay(N_SN,fname){
 }
 
 
+//锁定录音/录音解锁
+function lock(n_sn,n_lock,n_backup,obj)
+{
+    var n_sn = n_sn
+    var n_lock =  n_lock==1?0:1;
+    var n_backup =n_backup
+    var img = n_lock==1?0:1;
+   
+    var url = "/home/record/recordLockop"
+    $.ajax({
+        type:"POST",
+        url:url,
+        data:{
+            n_sn:n_sn,n_lock:n_lock,n_backup:n_backup 
+        },
+        success: function(data){ 
+            alert(data.message);
+            if(data.code){ 
+                changeSearch()
+            }
+        }
+    })
+}
+
+
+
 //删除选中的记录
 function del(flag){
 	if(!flag){
@@ -823,9 +883,39 @@ $('body').on('click', '.fanyi',function(){
 });   
    
 
-    function Remark(sn,bak){
-        $('#fanyiModel').modal('show');
+    function Remark(n_sn,n_backup,obj){
+        var remark = $(obj).data('rm')
+        $('#bznr').val(remark)
+        $('.save').data('remardid',n_sn)
+        $('.save').data('n_backup',n_backup)
+        $('#beizhuModel').modal('show');
+
     } 
+
+    $('body').on('click', '.save',function(){
+        var remarkid = $(this).data('remardid')
+        var n_backup = $(this).data('n_backup')
+        if(remarkid ==''){
+            alert('数据获取失败，请刷新重试');return ;
+        }
+         var remark = $.trim($('#bznr').val())
+       /* if(remark == ''){
+           alert('请输入备注内容');return
+        }*/
+        var url = "/home/record/remarkedit"
+        $.ajax({
+            type:"POST",
+            url:url,
+            data:{
+                n_sn:remarkid,remark:remark,n_backup:n_backup
+            },
+            success: function(data){ 
+                alert(data.message);
+                changeSearch()
+                $('#beizhuModel').modal('hide');
+            }
+        })
+    })
 </script>        
 		
 		

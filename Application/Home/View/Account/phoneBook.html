@@ -108,22 +108,26 @@
 	                                <!-- <div class="pull-left col-md-1">
 	                                    <h4 class="panel-title">录音查询</h4>
 	                                </div> -->
-	                                <div class="pull-left col-md-2">
+	                                <div class="pull-left" style="width: 175px;">
 	                                <div class="input-group" style="padding:5px;">
 		                                <lable class="pull-left">姓名：<input id="name" style="width:100px" type="text" value="" /></lable><br>
 		                             </div>
 		                             
 	                                </div>
-	                                <div class="pull-left col-md-2">
+	                                <div class="pull-left" style="width: 175px;">
 	                                 	<div class="input-group" style="padding:5px;">
 		                                <lable class="pull-left">号码：<input id="phone"  style="width:100px" type="text" value="" /></lable>                     
 	                                 </div>
 	                                </div>
-	                               
-	                                <div class="pull-left col-md-2">
+	                               <div class="pull-left" style="width: 250px;">
+	                                 	<div class="input-group" style="padding:5px;">
+		                                <lable class="pull-left">地区/单位：<input id="keyword" placeholder="请输入地区/单位 搜索" style="width:150px" type="text" value="" /></lable>                     
+	                                 </div>
+	                                </div>
+	                                <div class="pull-left col-md-1">
 											<button class="btn btn-info btn-large search">搜索</button>
 	                                </div>
-	                                <div class="pull-right col-md-6" style="text-align:right">
+	                                <div class="pull-right col-md-4" style="text-align:right">
 											<a href="./phoneBookAdd" class="btn btn-info btn-large">添加联系人</a>
 											<button class="btn btn-danger btn-large" onclick="del()">删除联系人</button>
 											<button class="btn btn-warning btn-large downloadPhone">导出号簿</button>
@@ -139,7 +143,9 @@
                                     <tr>
                                         <td><input type="checkbox" id="checked_all"></td>
                                         <th>名称</th>
-                                        <th>分组</th>
+                                        <th>地区</th>
+                                        <th>单位</th>
+                                        <th>分类</th>
                                         <th>本地电话1</th>
                                         <th>本地电话2</th>
                                         <th>本地电话3</th>
@@ -217,6 +223,7 @@ $(document).ready( function () {
 	                "data": function (d) {  //d 是原始的发送给服务器的数据，默认很长。
 	                	d.sName=$('#name').val();
 	                	d.sNum=$('#phone').val();
+	                	d.keyword =$("#keyword").val();
 	                }
 	            },
 	        
@@ -252,8 +259,10 @@ $(document).ready( function () {
 	                      return "<input type='checkbox' class='checked_per_pro' name='checked_per_pro'  value='"+mData.pid+"' />";
 	                     }
 	              	},
-	                {"mData": 'contactname'}, 
+	                {"mData": 'contactname'},
+	                {"mData": 'district'}, 
 	                {"mData": 'deptname'},
+	                {"mData": 'category'}, 
 	                {"mData": 'mobile'},
 	                {"mData": 'officenum'},
 	                {"mData": 'homenum'},

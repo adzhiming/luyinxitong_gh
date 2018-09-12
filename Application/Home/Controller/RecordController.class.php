@@ -141,7 +141,7 @@ class RecordController extends AuthController {
             if($rs){ 
                 foreach ($rs as $k=>$v)
                 {
-                    $fileplay ="<i class='fa fa-volume-up ' style=\"cursor:pointer\" onclick=\"play('".$v["n_sn"]."','".$v["v_voicefile"]."')\"></i>";
+                    $fileplay ="<i class='fa fa-volume-up  fa-2x' style=\"cursor:pointer\" onclick=\"play('".$v["n_sn"]."','".$v["v_voicefile"]."')\"></i>";
                     
                     $rs[$k]['n_channelinfo'] = getChannelNameById($v['n_channelid']);
                     $rs[$k]['v_caller'] = getNameByPhoneNum($v['v_caller']);
@@ -154,15 +154,21 @@ class RecordController extends AuthController {
                     $rs[$k]['remote_video'] = getVideoByRecID($v['n_sn'],1);
                     $rs[$k]['translate'] = get_translate($v['n_sn']);
                     $str = "";
-                    $str.="<img src='/Public/assets/images/lock".$v["n_lock"].".jpg' height=18"; 
+                    if($v["n_lock"] == 1){
+                        $str.="<i class='fa fa-lock fa-2x' alt='已锁定'";
+                    }
+                    else{
+                        $str.="<i class='fa fa-unlock fa-2x' alt='未锁定'";
+                    }
+                     
                     if(canLock()==1){
-                        $str.=" alt='点击锁定/解锁' style='cursor:pointer;'";
-                        $str.=" onclick='lock(".$v["n_sn"].",".$v["n_lock"].",".$v["n_backup"].");'";
+                        $str.="   style='cursor:pointer;'";
+                        $str.=" onclick='lock(".$v["n_sn"].",".$v["n_lock"].",".$v["n_backup"].",this);'";
                     }else{
                         $str.=($rows["n_lock"]==1)?" alt='已锁定'":" alt='未锁定'";
                     }
                     $str.=" id='img_lock_".$v["n_sn"]."'";
-                    $str.=" />";
+                    $str.=" /></i>";
                     $rs[$k]['n_lock_info'] = $str;
 
                     $str = "";
@@ -171,7 +177,7 @@ class RecordController extends AuthController {
                     }else{
                         $icoRemark="<img id='ico_".$v["n_sn"]."' src='/Public/assets/images/Remark.gif' />";
                     }
-                    $str.="<span align='center' onclick=\"Remark('".$v["n_sn"]."','".$v["n_backup"]."')\" style='cursor:pointer' ";
+                    $str.="<span align='center' data-rm='".$v["remark"]."' onclick=\"Remark('".$v["n_sn"]."','".$v["n_backup"]."',this)\" style='cursor:pointer' ";
                     $str.=" title=\"".$v["remark"]."\" >{$icoRemark}</span>";
                     $rs[$k]['remark_info'] = $str;
                 }
@@ -199,7 +205,67 @@ class RecordController extends AuthController {
         $this->assign("CurrentPage",'recordList');
         $this->display();
     }
-    
+
+   
+   /*
+        锁定录音/录音解锁
+        锁定状态的录音禁止删除
+        用户点击录音信息查询页面的锁定按钮时，讲对应的
+     */ 
+   public function recordLockop(){
+         
+        $isBack=$_REQUEST["n_backup"];
+        $isLock=$_REQUEST["n_lock"];
+        $N_SN=$_REQUEST["n_sn"];
+        $tbname=($isBack==1)?"rec_bakinfo":"rec_cdrinfo";
+        $data = array();
+        $data['N_Lock'] = $isLock;
+        $rs = M($tbname)->where("N_SN={$N_SN}")->save($data);  
+        $msg = $isLock==1?'锁定':'解锁';   
+        $AppResult = new AppResult;
+        if(false !== $rs){
+           $AppResult->code = 1;
+           $AppResult->data = '';
+           $AppResult->message = $msg.'成功';
+        }
+        else
+        {
+           $AppResult->code = 0;
+           $AppResult->data = '';
+           $AppResult->message =$msg.'失败';
+        }
+        $AppResult->returnJSON();
+        
+   }
+
+ /*
+        录音备注编辑
+        
+     */
+  public function remarkedit(){
+ 
+    $remark=MySQLFixup(isset($_POST["remark"])?$_POST["remark"]:"");
+    $isBack = $_REQUEST['n_backup'];
+    $sn = $_REQUEST['n_sn'];
+    $tbname=($isBack==1)?"rec_bakinfo":"rec_cdrinfo";
+    $save['ReMark'] = $remark;
+    $rs = M($tbname)->where("N_SN ='{$sn}'")->save($save);
+    //echo M()->getLastSql(); 
+    $AppResult = new AppResult;
+    if(false !== $rs){
+       $AppResult->code = 1;
+       $AppResult->data = '';
+       $AppResult->message =$msg.'成功编辑备注信息';
+    }
+    else
+    {
+       $AppResult->code = 0;
+       $AppResult->data = '';
+       $AppResult->message =$msg.'失败';
+    }
+    $AppResult->returnJSON();    
+  }
+
    public function getIDByName($id){
         $rs = M("sys_paramschannel")->field("V_Value")->where("N_ChannelNo='{$id}' and V_ParamsName ='ChnName'")->find();
         if($rs){
@@ -955,7 +1021,7 @@ class RecordController extends AuthController {
         if($rs){ 
             foreach ($rs as $k=>$v)
             {
-                $fileplay ="<i class='fa fa-volume-up ' style=\"cursor:pointer\" onclick=\"play('".$v["n_sn"]."','".$v["v_voicefile"]."')\"></i>";
+                $fileplay ="<i class='fa fa-volume-up fa-2x' style=\"cursor:pointer\" onclick=\"play('".$v["n_sn"]."','".$v["v_voicefile"]."')\"></i>";
                 
                 $rs[$k]['n_channelinfo'] = getChannelNameById($v['n_channelid']);
                 $rs[$k]['v_caller'] = getNameByPhoneNum($v['v_caller']);

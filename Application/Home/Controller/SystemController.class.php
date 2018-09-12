@@ -199,10 +199,10 @@ class SystemController extends AuthController {
         $channelid=isset($_GET["channelid"])?$_GET["channelid"]:"9999";
         $todo=isset($_POST["todo"])?$_POST["todo"]:"";
         if(IS_POST){
+            $paraList=$this->getParam('paraList');                                   //参数名称列表;
+            $paraList=explode(",",$paraList);
             if($todo=="update"){
-                $msg="";
-                $paraList=$this->getParam('paraList');                                   //参数名称列表;
-                $paraList=explode(",",$paraList);
+                $msg=""; 
                 for($i=0;$i<count($paraList);$i++){
                     $paraValue[$i]=$_POST[$paraList[$i]];
                 }
@@ -270,20 +270,16 @@ class SystemController extends AuthController {
                     $msg.="请重新启动服务管理器里面的NEU_TECH_VCR、NEU_TECH_MED和NEU_TECH_SIG服务";
                 }
                 for($i=0;$i<count($paraList);$i++){
-                    $where = array();
-                    $update = array();
-                    $where['V_ParamsName'] = $paraList[$i];
-                    $update['V_Value'] = 'V_DefaultValue';
-                    
-
+                     
                     
                     $log="通过浏览器恢复通道参数".$paraList[$i]."默认值（所有通道）";
                     if($channelid!=9999){
                         $where['N_ChannelNo'] = $channelid;
                         $log="通过浏览器恢复通道".$channelid."参数".$paraList[$i]."默认值";
                     }
-                    $rs = M('sys_paramschannel')->where($where)->save($update);
-                    //echo $sql."<br />";
+                    $sql = "update tab_sys_paramschannel set V_Value = V_DefaultValue where V_ParamsName = '{$paraList[$i]}' ";
+                    $rs = M()->execute($sql);
+                   // echo M()->getError();exit;
                     if(false === $rs){
                         $msg=$msg."参数[".$paraList[$i]."]恢复默认值时发生错误，操作失败。\\n";
                     }else{
@@ -292,7 +288,8 @@ class SystemController extends AuthController {
                 }
              } 
              $url ="/home/System/paramsChannel/channelid/{$channelid}";
-             JS_alert($msg,$url,true); exit; 
+             JS_alert($msg,$url,true);
+              exit; 
         }
         
         $sql = "select a.*,b.n_channeltype,b.n_channelno from tab_sys_paramschannel a,tab_sys_channelconfig b ";

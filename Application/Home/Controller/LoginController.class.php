@@ -25,9 +25,9 @@ class LoginController extends Controller
 				 
 				$where['V_AccountName'] = $_REQUEST['uname'];
 				//检测是否从monitor登录，如果有则从HID_INAME接收用户名
-				if(isset($_REQUEST["HID_INAME"])){	
-					if(trim($_REQUEST["HID_INAME"]) !="" && !empty($_REQUEST["HID_INAME"]) && $_REQUEST["HID_INAME"] != null){
-						$where['V_AccountName'] =$_REQUEST["HID_INAME"];
+				if(isset($_REQUEST["INAME"])){	
+					if(trim($_REQUEST["INAME"]) !="" && !empty($_REQUEST["INAME"]) && $_REQUEST["INAME"] != null){
+						$where['V_AccountName'] =$_REQUEST["INAME"];
 					}
 				}
 				$upwd=isset($_POST["IPASSWORD"])?$_POST["IPASSWORD"]:"";

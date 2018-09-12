@@ -59,7 +59,7 @@ var SearchMode = "{$SearchMode}"
 									    </div><!-- /input-group -->
 	                                </div>
 	                                <div class="pull-left col-md-2">
-	                                        <button class="btn btn-success btn-large">打印</button>
+	                                        <span class="btn btn-success btn-large" onclick="dayin()">打印</span>
 											<button class="btn btn-info btn-large">搜索</button>
 	                                </div>
                                 </div>
@@ -110,8 +110,12 @@ var SearchMode = "{$SearchMode}"
         <script src="__PUBLIC__/assets/bootstrap/js/jquery.datatables.min.js"></script>
         <script src="__PUBLIC__/assets/bootstrap/js/bootstrap-datetimepicker.js"></script>
         <script src="__PUBLIC__/assets/bootstrap/js/custom.js"></script>
+        <script src="__PUBLIC__/assets/bootstrap/js/jquery-migrate-1.2.1.min.js"></script>
+        <script src="__PUBLIC__/assets/bootstrap/js/jquery.jqprint-0.3.js"></script>
 
 <script type="text/javascript">
+
+
 $(document).ready( function () {
 	
 if(SearchMode == 0){
@@ -268,6 +272,10 @@ jQuery('#datetimepicker_end').datetimepicker.dates['zh'] = {
         
     jQuery('#datetimepicker_start').datetimepicker({language:'zh'});
     jQuery('#datetimepicker_end').datetimepicker({language:'zh'});
+
+    function dayin(){
+    $("#basicTable").jqprint();
+}
 </script>
 
     </body>
