@@ -1,16 +1,7 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
+<include file="./Application/Home/View/Layout/head.html" />
 
-	
-        <title>工作站管理</title>
-
-        <link href="__PUBLIC__/assets/bootstrap/css/style.default.css" rel="stylesheet">
         <link href="__PUBLIC__/assets/bootstrap/css/select2.css" rel="stylesheet" />		
         <link href="__PUBLIC__/assets/bootstrap/css/jquery.dataTables.min.css" rel="stylesheet">
         <style type="text/css">
@@ -18,8 +9,7 @@
 	text-align: center;
     color: red;
  }
-       </style>
-    </head>
+       </style> 
 
     <body>
         <block name="header">
@@ -46,14 +36,14 @@
                                     </div><!-- panel-heading -->
                                     <div class="panel-body">
                                         <div class="row">
-                                            <div class="form-group">
+                                            <div class="form-group clearfix">
                                                 <label class="col-sm-2 control-label">工作站名称 <span class="asterisk">*</span></label>
                                                 <div class="col-sm-6">
                                                     <input type="text" id="stationName" name="stationName" class="form-control" placeholder="用户名" required />
                                                 </div>
                                             </div><!-- form-group -->
                                             
-                                            <div class="form-group">
+                                            <div class="form-group clearfix">
                                                 <label class="col-sm-2 control-label">录音号码<span class="asterisk">*</span></label>
                                                 <div class="col-sm-6">
                                                     <textarea rows="5" id="recordNum" name="recordNum" class="form-control" placeholder="有权号码，指用户有权查看录音的号码。此项留空则可查看所有号码的录音。 
@@ -63,7 +53,7 @@
                                             
                                              
                                             
-                                            <div class="form-group">
+                                            <div class="form-group clearfix">
                                                 <label class="col-sm-2 control-label">备注信息<span class="asterisk">*</span></label>
                                                 <div class="col-sm-6">
                                                     <textarea rows="5" id="remark" name="remark" class="form-control" placeholder="备注信息" required></textarea>

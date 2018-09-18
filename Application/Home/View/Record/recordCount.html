@@ -1,26 +1,17 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
+<include file="./Application/Home/View/Layout/head.html" />
 
-	
-        <title>录音系统</title>
-
-        <link href="__PUBLIC__/assets/bootstrap/css/style.default.css" rel="stylesheet">
         <link href="__PUBLIC__/assets/bootstrap/css/select2.css" rel="stylesheet" />		
         <link href="__PUBLIC__/assets/bootstrap/css/jquery.dataTables.min.css" rel="stylesheet">
 		<link href="__PUBLIC__/assets/bootstrap/css/bootstrap-datetimepicker.css" rel="stylesheet">
 		<link href="__PUBLIC__/assets/bootstrap/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
 		<link href="__PUBLIC__/assets/bootstrap/css/jquery.audioplayer.css" rel="stylesheet" />
-    </head>
 <script type="text/javascript">
 var SearchMode = "{$SearchMode}"
 </script>
     <body>
+  
         <block name="header">
            <include file="block/header"/>
         </block>
@@ -32,7 +23,6 @@ var SearchMode = "{$SearchMode}"
                 
                 <div class="mainpanel">
                     <div class="contentpanel">
-                       
                         <div class="panel panel-title-head">
                             <div class="search_banner">
                               <form id="form1" method="post" action="">
@@ -274,7 +264,7 @@ jQuery('#datetimepicker_end').datetimepicker.dates['zh'] = {
     jQuery('#datetimepicker_end').datetimepicker({language:'zh'});
 
     function dayin(){
-    $("#basicTable").jqprint();
+   $("#basicTable").jqprint();
 }
 </script>
 

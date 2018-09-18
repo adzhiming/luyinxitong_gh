@@ -194,6 +194,13 @@ class AccountController extends AuthController {
                            }
                         }
                     }
+                    else
+                    { 
+                        $upd['sex'] = 1; 
+                        $upd['deptid'] = 0;
+                        $upd['contactName'] = $v['name'];
+                        $rs = M('phonebook')->add($upd);
+                    }
 
                 }
             }
@@ -226,7 +233,7 @@ class AccountController extends AuthController {
                 $data = array();
                 $data['V_AccountName'] = $username;
                 $data['V_Password'] = $password;
-                $data['N_AfairType'] = $canItems;
+                $data['N_AfairType'] = str_replace(",", "", $canItems);
                 $data['N_Privilege'] = 9;
                 $data['N_Status'] = 1;
                 $data['V_Remark'] = $remark;

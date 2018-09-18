@@ -1,18 +1,6 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
-
-	
-        <title>录音系统</title>
-
-        <link href="__PUBLIC__/assets/bootstrap/css/style.default.css" rel="stylesheet">
-		
-    </head>
+<include file="./Application/Home/View/Layout/head.html" />
 
     <body>
 		<block name="header">
@@ -122,18 +110,20 @@
                                     </div>panel-body
                                     
                                 </div>panel -->
-                                <div id="container" style="min-width:600px; height:300px;"></div>
+                                <div id="container" style="min-width:600px; height:600px;"></div>
                             </div>
                         </div><!-- row -->
                         <br>
                         <!-- 所有录音通道数据统计-->					    
-						<div class="row">
+						<!-- <div class="row">
 						    
                             <div class="col-md-12">
                              
                                 <div id="container2" style="min-width:600px; height:300px;"></div>
                             </div>
-                        </div><!-- row -->
+                        </div> -->
+
+                        <!-- row -->
                
                         <div class="row">
                             <div class="col-md-12">
@@ -159,6 +149,7 @@
         <script src="__PUBLIC__/assets/bootstrap/js/hightstock/highstock.js"></script>
         <script src="__PUBLIC__/assets/bootstrap/js/hightstock/exporting.js"></script>
         <script src="__PUBLIC__/assets/bootstrap/js/hightstock/highcharts-zh_CN.js"></script>
+		<!-- <script src="__PUBLIC__/assets/bootstrap/js/highcharts.js"></script> -->
         <script src="__PUBLIC__/assets/bootstrap/js/custom.js"></script> 
  		<script>
   
@@ -178,19 +169,19 @@ for(var i=0;i<arr.length;i++)
         video_count[i]= Number(arr[i]);
 }
  
-     var arr = {$voice_day_count};  
+/* var arr = {$voice_day_count};  
      
-     var voice_day_count=new Array();
+ var voice_day_count=new Array();
 for(var i=0;i<arr.length;i++)
 {
         voice_day_count[i]= Number(arr[i]);
 }
-    var   videoarr = {$video_day_count};
-     var video_day_count=new Array();
+ var   videoarr = {$video_day_count};
+var video_day_count=new Array();
 for(var i=0;i<videoarr.length;i++)
 {
         video_day_count[i]= Number(videoarr[i]);
-}
+}*/
 
 
 
@@ -218,7 +209,7 @@ for(var i=0;i<videoarr.length;i++)
  		        },
  		       yAxis: {
 		            min: 0,
-		            max: 200,
+		            max: 300,
 		            title: {
 		                text: '录音记录',
 		                align: 'high'
@@ -245,7 +236,7 @@ for(var i=0;i<videoarr.length;i++)
 
  		
  	
- 	var chart = Highcharts.chart('container2', {
+/* 	var chart = Highcharts.chart('container2', {
     chart: {
         type: 'line'
     },
@@ -280,7 +271,7 @@ for(var i=0;i<videoarr.length;i++)
         name: '录像',
         data: video_day_count
     }]
-});
+});*/
  		
  		
  	

@@ -1,16 +1,6 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
-
-	
-        <title>分组管理</title>
-
-        <link href="__PUBLIC__/assets/bootstrap/css/style.default.css" rel="stylesheet">
+<include file="./Application/Home/View/Layout/head.html" />
         <link href="__PUBLIC__/assets/bootstrap/css/select2.css" rel="stylesheet" />		
         <link href="__PUBLIC__/assets/bootstrap/css/jquery.dataTables.min.css" rel="stylesheet">
         
@@ -20,7 +10,7 @@
 	    color: red;
 	 }
   </style>
-    </head>
+ 
 
     <body>
         <block name="header">
@@ -41,16 +31,15 @@
 	                                <!-- <div class="pull-left col-md-1">
 	                                    <h4 class="panel-title">录音查询</h4>
 	                                </div> -->
-	                                <div class="pull-left col-md-3">
-	                                <div class="input-group" style="padding:5px;">
-		                                <lable class="pull-left">分组名称：<input id="departName" style="width:100px;float: right;" type="text" value="" /></lable><br>
-		                             </div>
-		                             
+	                                <div class="col-md-4 clearfix">
+	                                	<div class="input-group" style="float: left; margin-right: 5px;">
+		                                	<lable class="pull-left">分组名称：
+		                                		<input id="departName" style="height: 33px; line-height: 33px;" type="text" value="" /></lable><br>
+		                             	</div>
+		                             	<button class="btn btn-info btn-large search">搜索</button>
 	                                </div>
-	                                <div class="pull-left col-md-2">
-											<button class="btn btn-info btn-large search">搜索</button>
-	                                </div>
-	                                <div class="pull-right col-md-5" style="text-align:right">
+	                                <div class="pull-right col-md-8" style="text-align:right">
+
 											<a href="./departMentAdd" class="btn btn-info btn-large">添加分组</a>
 											<!-- <button class="btn btn-danger btn-large">删除分组</button> -->
 	                                </div>

@@ -56,17 +56,15 @@ class IndexController extends AuthController {
        
         //获取最近30天录音录像记录数
         $days = array();
-        $voice_day_count = array();
+        /*$voice_day_count = array();
         $video_day_count = array();
         $monthCount =   getRecordVideoCount($seachType='month');
-        /*echo "<pre>";
-        print_r($monthCount);
-        echo "</pre>";*/
+         
          foreach ($monthCount as $kl => $vl) {
               $days[] = $kl;
               $voice_day_count[] = $vl['voiceCnt'];
               $video_day_count[] = $vl['videoCnt'];
-         }
+         }*/
         /*echo "<pre>";
         print_r($voice_day_count);
         echo "</pre>";*/
@@ -75,9 +73,9 @@ class IndexController extends AuthController {
         $this->assign("voice_count",json_encode($voice_count));
         $this->assign("video_count",json_encode($video_count));
 
-        $this->assign("days",json_encode($days));
+        /*$this->assign("days",json_encode($days));
         $this->assign("voice_day_count",json_encode($voice_day_count));
-        $this->assign("video_day_count",json_encode($video_day_count));
+        $this->assign("video_day_count",json_encode($video_day_count));*/
 
         $this->assign("curDiskNum",$curDiskNum);
         $this->assign("yiyong",$yiyong);

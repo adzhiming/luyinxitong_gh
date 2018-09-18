@@ -1,15 +1,7 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
+<include file="./Application/Home/View/Layout/head.html" />
 
-	
-        <title>录音系统</title>
-        <link href="__PUBLIC__/assets/bootstrap/css/style.default.css" rel="stylesheet">
         <link href="__PUBLIC__/assets/bootstrap/css/font-awesome.min.css" rel="stylesheet">
         <link href="__PUBLIC__/assets/bootstrap/css/select2.css" rel="stylesheet" />		
         <link href="__PUBLIC__/assets/bootstrap/css/jquery.dataTables.min.css" rel="stylesheet">
@@ -113,7 +105,6 @@
 }
         </style>
  
-    </head>
 
     <body>
         <block name="header">
@@ -214,10 +205,10 @@
                     alt="删除选中记录">删除选中记录</button>
 	                          </div> 
 	                          <div class="pull-left ">
-	                                <button class="btn btn-warning btn-small" type="button"  onclick="batDown()" >打包下载录音</button>
+	                                <button class="btn btn-warning btn-small" type="button"  onclick="batDown(<?php echo canManage(); ?>)" >打包下载录音</button>
 	                          </div>
                               <div class="pull-left ">
-                                    <button class="btn btn-success btn-small" type="button"  onclick="batDownExcel()" >导出录音EXCEL</button>
+                                    <button class="btn btn-success btn-small" type="button"  onclick="batDownExcel(<?php echo canManage(); ?>)" >导出录音EXCEL</button>
                               </div>
                             <!--   <div class="pull-right ">
                                     <label>每页显示</label>
@@ -760,7 +751,12 @@ function del(flag){
 }
 
 //打包下载
-function batDown(){
+function batDown(flag){
+  if(!flag){
+    $('#alertModel').modal('show');
+    $('.Alertmessage').html('无权操作，请与管理员联系') 
+    return;
+    }
 	var Items =""
 	var i =""
 		 $('input[name="checked_per_pro"]:checked').each(function(){ 
@@ -808,7 +804,13 @@ function batDown(){
 }
 
 
-function batDownExcel(){
+function batDownExcel(flag){
+    if(!flag){
+      $('#alertModel').modal('show');
+      $('.Alertmessage').html('无权操作，请与管理员联系') 
+      return;
+    }
+
         $("input:radio[name='InOut']:checked").each(function() { 
             InOut = $(this).val();  // 每一个被选中项的值
         }); 

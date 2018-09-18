@@ -11,19 +11,16 @@ function getTodayChannelCount($ChannelNo='',$days){
     }
     //统计录音
     $rs = M('rec_cdrinfo a')->field("count(*) cnt")->where($where)->find();
-    $rs_bak = M('rec_bakinfo a')->field("count(*) cnt")->where($where)->find();
-    $cnt_bak = isset($rs_bak['cnt'])?$rs_bak['cnt']:0;
-    $cnt_bak = empty($cnt_bak)?0:$cnt_bak;
+     
     if($rs){
-        $returnData['voiceCnt'] = $rs['cnt']+$cnt_bak;
+        $returnData['voiceCnt'] = $rs['cnt'];
     }
     else{
-       $returnData['voiceCnt'] = 0+$cnt_bak; 
+       $returnData['voiceCnt'] = 0; 
     }
 
-    //统计录像
-        $sql = "select `recid` from tab_ved_cdrinfo union select `recid` from tab_ved_bakinfo order by `recid` ";
-        $res = M()->query($sql);
+    //统计录像 
+        $res = M('ved_cdrinfo')->field('recid')->order('recid')->select($sql);
         $recid = "";
         if($res){
             foreach ($res as $v){
@@ -45,16 +42,12 @@ function getTodayChannelCount($ChannelNo='',$days){
         }
         $sql="Select Count(N_SN) as cnt from tab_rec_cdrinfo a where ".$where." {$where2} limit 1";
         $rsVideo = M()->query($sql);
-
-        $sql="Select Count(N_SN) as cnt from tab_rec_bakinfo a where ".$where." {$where2} limit 1";
-        $rsVideo_bak = M()->query($sql);
-        $cnt_bak = isset($rsVideo_bak[0]['cnt'])?$rsVideo_bak[0]['cnt']:0;
-        $cnt_bak = empty($cnt_bak)?0:$cnt_bak;
+ 
     if($rsVideo){
-        $returnData['videoCnt'] = $rsVideo[0]['cnt']+$cnt_bak;
+        $returnData['videoCnt'] = $rsVideo[0]['cnt'];
     }
     else{
-       $returnData['videoCnt'] = 0+$cnt_bak; 
+       $returnData['videoCnt'] = 0; 
     }
     return $returnData;
 }
@@ -146,7 +139,9 @@ function getNameByPhoneNum($num){
           ->find();
     if($rs)
     {
-        return $rs['contactname']."：".$num;
+        $name = iconv("gb2312//IGNORE","utf-8",base64_decode($rs['contactname'],'gb2312'));
+        $name = $name == true?$name:'';
+        return $name."：".$num;
     }
     return $num;
 }
@@ -201,14 +196,14 @@ function getVideoByRecID($id,$type)
     {
         if($type == 0){
             if ($rows['localfilename']) {
-                $str_video="<i class='fa fa-play-circle-o ' style=\"cursor:pointer\" onclick=\"vplay('".$rows["recid"]."','localfilename')\"></i>";
+                $str_video="<i class='fa fa-play-circle-o fa-2x' style=\"cursor:pointer\" onclick=\"vplay('".$rows["recid"]."','localfilename')\"></i>";
             }else {
                 $str_video="---";
             }
         }
         if($type == 1){
             if($rows['remotefilename']){
-                $str_video="<i class='fa fa-play-circle-o ' style=\"cursor:pointer\" onclick=\"vplay('".$rows["recid"]."','remotefilename')\"></i>";
+                $str_video="<i class='fa fa-play-circle-o fa-2x' style=\"cursor:pointer\" onclick=\"vplay('".$rows["recid"]."','remotefilename')\"></i>";
             }else {
                 $str_video="---";
             }
@@ -500,4 +495,8 @@ function is_ip($str){
 
 function canLock(){
     return substr($_SESSION['uRights'],3,1);
+}
+
+function canManage(){
+    return substr($_SESSION['uRights'],2,1);
 }
