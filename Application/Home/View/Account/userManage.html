@@ -26,7 +26,7 @@
                         <div class="panel panel-title-head">
                         <div class="search_banner">
                              <div class="pull-left col-md-1">
-	                                <a class="btn btn-info btn-large" href="../Account/userAdd">添加用户</a>
+	                               <span  class="btn btn-info btn-large" onclick="add(<?php echo canManage(); ?>)">添加用户</span>
 	                          </div> 
 	                          <input type="hidden" id="delid" value="">
 	                          <input type="hidden" id="delname" value="">
@@ -180,6 +180,15 @@ $(document).ready( function () {
 	     })
 
 	})
+
+	function add(flag){
+        if(!flag){
+			$('#alertModel').modal('show');
+			$('.Alertmessage').html('无权操作，请与管理员联系') 
+			return;
+		}
+		window.localtion.href="../Account/userAdd";
+	}
 </script>	
 		
     </body>

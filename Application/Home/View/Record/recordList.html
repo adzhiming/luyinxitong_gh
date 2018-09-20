@@ -739,10 +739,12 @@ function del(flag){
 					strID:toDel	
 				},
 				success: function(data){
-					console.log(data)
+					 
 					if(data.code){
 						alert(data.message);
-                        window.location.href="/home/record/recordList"
+            CHANNEL_TB.fnClearTable();
+            CHANNEL_TB.fnReloadAjax();
+            // window.location.href="/home/record/recordList"
 					}
 				}
 			})

@@ -629,6 +629,7 @@ class RecordController extends AuthController {
 	    $AppResult = new AppResult();
 	    
 	    $sql="select n_sn,v_path,v_voicefile from {$tab} where n_sn in(".$strID.") and N_Lock!=1;";//筛选出未锁定记录
+
 	    $rs=M()->query($sql);
 	    if($rs){
 	        foreach ($rs as $v){
@@ -727,6 +728,7 @@ class RecordController extends AuthController {
 	            }
 	        }
 	    }
+
 	    //返回操作信息
 	    if(count($rs)>0){
 	        $delid=implode($delid,",");//将数组转换为字符串
@@ -736,6 +738,7 @@ class RecordController extends AuthController {
 	            return "成功删除记录(锁定状态的记录未能删除)";
 	        }
 	    }else{//("未能删除记录：所选记录为锁定状态");
+            
 	        return "未能删除记录（锁定状态）";
 	    }
 	}
