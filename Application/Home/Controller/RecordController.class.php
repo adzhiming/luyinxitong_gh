@@ -609,9 +609,22 @@ class RecordController extends AuthController {
 	        }
 	        $msg=$this->del("tab_rec_cdrinfo",$strID);
 	        $msg1=$this->del("tab_rec_bakinfo",$strID);
-	        if($msg!=$msg1){
-	            $msg=$msg."\\r\\n".$msg1;
-	        }
+            if($msg ==3 && $msg1 ==3){
+                $msg= "未能删除记录（锁定状态）";
+            }
+            else
+            {
+               if($msg ==1 || $msg1 == 1){
+                  $msg =  "成功删除记录";
+               }
+               elseif($msg ==2 || $msg1 == 2){
+                  $msg = "成功删除记录(锁定状态的记录未能删除)";
+               }
+               else{
+                  $msg = "未能删除记录：所选记录为锁定状态";
+               }
+            }
+	         
 	        
 	        $AppResult->code = 1;
 	        $AppResult->data ="";
@@ -733,13 +746,13 @@ class RecordController extends AuthController {
 	    if(count($rs)>0){
 	        $delid=implode($delid,",");//将数组转换为字符串
 	        if(strlen($strID)==strlen($delid)){
-	            return "成功删除记录";
+	            return 1; //"成功删除记录";
 	        }else{
-	            return "成功删除记录(锁定状态的记录未能删除)";
+	            return 2; //"成功删除记录(锁定状态的记录未能删除)";
 	        }
 	    }else{//("未能删除记录：所选记录为锁定状态");
-            
-	        return "未能删除记录（锁定状态）";
+
+	        return 3; // "未能删除记录（锁定状态）";
 	    }
 	}
 	
