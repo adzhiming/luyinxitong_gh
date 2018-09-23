@@ -98,6 +98,11 @@
 
 <script type="text/javascript">
  	function formSub(todo){
+ 		var flag = <?php echo canManage(); ?>;
+        if(!flag){
+            alert('无权操作，请与管理员联系')
+            return false;
+        }
 		$("#todo").val(todo);
 		if(todo=="changePath"){
 			Obj_path=document.getElementsByName("path[]");
@@ -176,6 +181,11 @@
 	}
 
 	function setEmpty(id){
+		var flag = <?php echo canManage(); ?>;
+        if(!flag){
+            alert('无权操作，请与管理员联系')
+            return false;
+        }
 		var UsingDisk=getUsingDisk();
 		if(UsingDisk.substr(0,1)==id){
 			alert("当使用磁盘不允许设置为空。");	

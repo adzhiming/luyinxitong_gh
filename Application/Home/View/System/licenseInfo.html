@@ -16,7 +16,7 @@
                </block>
                 
                 <div class="mainpanel">
-                    <form name="form1" action="" method="post">
+                    <form name="form1" id="form1" action="" method="post"  onsubmit="return submitCheck(<?php echo canManage(); ?>)">
                     <div class="contentpanel">
                         <div class="panel panel-title-head">
                             <table id="basicTable" class="table table-striped table-bordered responsive">
@@ -63,6 +63,17 @@
         <script src="__PUBLIC__/assets/bootstrap/js/bootstrap.min.js"></script>
         <script src="__PUBLIC__/assets/bootstrap/js/custom.js"></script>
 	
+  <script type="text/javascript">
+    
+     function submitCheck(flag){
+  if(!flag){
+     
+    alert('无权操作，请与管理员联系') 
+    return false;
+    }
+    $("#form1").submit()
+ }
+  </script>
 		
     </body>
 </html>

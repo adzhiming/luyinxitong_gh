@@ -34,7 +34,7 @@
                                             </div><!-- panel-btns -->
                                             <h4 class="panel-title">{$title}</h4>
                                         </div><!-- panel-heading -->
-                                        <form name="form1" id="form1" method="POST" action="" enctype="multipart/form-data">
+                                        <form name="form1" id="form1" method="POST" action="" enctype="multipart/form-data"  onsubmit="return submitCheck(<?php echo canManage(); ?>)">
                                         <div class="panel-body">
                                             <div class="row">
                                                 <div class="form-group">
@@ -111,6 +111,14 @@ $(document).ready( function () {
    
 })
 
+function submitCheck(flag){
+    if(!flag){
+        $('#alertModel').modal('show');
+        $('.Alertmessage').html('无权操作，请与管理员联系') 
+        return false;
+    }
+    $("#form1").submit()
+ }
 
 </script>        
 		

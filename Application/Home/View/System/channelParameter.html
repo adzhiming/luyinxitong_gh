@@ -86,7 +86,7 @@
                 
                 <div class="mainpanel">
                     <div class="contentpanel">
-                       <form name="form1" action="" method="post">
+                       <form name="form1" id="form1" action="" method="post" onsubmit="return submitCheck(<?php echo canManage(); ?>)">
                         <div class="panel panel-title-head">
                         <div class="search_banner">
                              <div class="pull-left col-md-1">
@@ -215,6 +215,35 @@
         }
       })
     })
+
+    var videoinput =  $("input[name^='IsVideoChannel_']");
+    videoinput.click(function(){
+        var num = 0;
+        $("input:checkbox[name^='IsVideoChannel_']:checked").each(function(k){
+            num ++
+        })
+        if(num > 16){
+
+           if($(this).is(':checked')){
+              alert('最多只能选择16通道录像');return false;
+           }
+           else
+           {
+
+           }
+           
+        }
+    })
+    
+
+ function submitCheck(flag){
+  if(!flag){
+    $('#alertModel').modal('show');
+    $('.Alertmessage').html('无权操作，请与管理员联系') 
+    return false;
+    }
+    $("#form1").submit()
+ }
 
   </script>
 		

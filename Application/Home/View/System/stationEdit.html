@@ -113,6 +113,11 @@
 <script type="text/javascript">
 $(document).ready( function () {
   $('.update').click(function(){
+    var flag = <?php echo canManage(); ?>;
+        if(!flag){
+            alert('无权操作，请与管理员联系')
+            return false;
+        }
 	   var stationID = $('#stationID').val()
 	   var stationName = $('#stationName').val()
 	   var recordNum = $('#recordNum').val();

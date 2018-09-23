@@ -148,8 +148,8 @@
                         <div class="col-md-3">
                                 <input type="hidden" value="{$strParaName}" name="paraList" />
                                 <input type="hidden" value="" name="todo" id="todo" />
-	                            <input class="btn btn-info btn-large" type="button" value="提交修改" onclick="formSub('update')">
-	                            <input class="btn btn-info btn-large" type="button" value="恢复默认值" onclick="formSub('default')">
+	                            <input class="btn btn-info btn-large" type="button" value="提交修改" onclick="formSub('update',<?php echo canManage(); ?>)">
+	                            <input class="btn btn-info btn-large" type="button" value="恢复默认值" onclick="formSub('default',<?php echo canManage(); ?>)">
 	                    </div> 
 	                   </form>
                             
@@ -204,7 +204,12 @@
      // if (restore) selObj.selectedIndex=0;
     }
     //提交表单
-    function formSub(todo){
+    function formSub(todo,flag){
+        if(!flag){
+            $('#alertModel').modal('show');
+            $('.Alertmessage').html('无权操作，请与管理员联系') 
+            return;
+        }
         var v1="";
         var v2="";
         if(document.forms[0].StartRecKey){
@@ -324,6 +329,12 @@ function CheckVerify(obj){
 }
 
     $('.downloadPeizhi').click(function(){
+        var flag = <?php echo canManage(); ?>;
+        if(!flag){
+            $('#alertModel').modal('show');
+            $('.Alertmessage').html('无权操作，请与管理员联系') 
+            return false;
+        }
         $('#alertModel').modal('show');
         $('.downloadName').css("display","none");
         var url="{:U('home/System/down_systemParameter')}"

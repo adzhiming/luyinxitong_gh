@@ -195,6 +195,11 @@ $('.addIP').click(function(){
   	
 //删除选中的记录
 function del(id){
+	var flag = <?php echo canManage(); ?>;
+        if(!flag){
+            alert('无权操作，请与管理员联系')
+            return false;
+        }
 	if(!id){
 		$('#alertModel').modal('show');
 		$('.Alertmessage').html('请选中要删除的记录') 
