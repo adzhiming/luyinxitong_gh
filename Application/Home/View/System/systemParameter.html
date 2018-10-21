@@ -181,13 +181,13 @@
     </body>
     <script>
 	function formSub(todo){
-		 var flag = <?php echo canManage(); ?>;
+		var flag = <?php echo canManage(); ?>;
         if(!flag){
             $('#alertModel').modal('show');
             $('.Alertmessage').html('无权操作，请与管理员联系') 
             return false;
         }
-		
+
 		$("#todo").val(todo);
 		if(todo=="setDefault"){
 			if(!confirm("确定将所有参数恢复默认值？")){

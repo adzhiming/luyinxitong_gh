@@ -25,6 +25,7 @@ class RecordController extends AuthController {
             $search_key = $_REQUEST['search_key'];
             $has_video = $_REQUEST['has_video'];
             $stime = isset($_REQUEST['stime'])?$_REQUEST['stime']:1;
+            $stime = empty($stime)?0:$stime;  
             $InOut = $_REQUEST['InOut'];
             $chk_CN = $_REQUEST['chk_CN'];
             $datetimepicker_start = isset($_REQUEST['datetimepicker_start'])?$_REQUEST['datetimepicker_start']:$s_time;
@@ -833,7 +834,7 @@ class RecordController extends AuthController {
 	
 	//根据ID串获取录音文件地址
 	//返回数组
-	function getPath($where){
+	public function getPath($where){
 	    //注：需要在打包时同时生成CSV文件压缩在里面，所以需要的信息比较多。
 	    //需要调整csv文件以配合本地播放软件时，调整此字段($sel值)即可。
 	    //v_path,v_netpath,v_voicefile是必选字段
@@ -841,27 +842,33 @@ class RecordController extends AuthController {
 	    $sel.="v_caller,v_called,v_ext,v_diverter,v_diverted,v_path,v_netpath,n_istalk,remark";
 	    $sql="select {$sel} from tab_rec_cdrinfo ".$where;
 	    //echo $sql;
+        $csv = array();
+        $path = array();
 	    $rows=M()->query($sql);
 	    if($rows){
     	    foreach ($rows as $k=>$v)
     	    {
     	        $fpath=$v["v_path"].$v["v_voicefile"];
     	        $fname=$v["v_voicefile"];
-    	        $csv[]=$rows;
-    	        $path[]=array("fpath"=>"$fpath","fname"=>"$fname");
+    	        $csv=$rows;
+    	        $path=array("fpath"=>"$fpath","fname"=>"$fname");
     	    }
 	    }
-	    $sql=str_replace("tab_rec_cdrinfo","tab_rec_bakinfo",$sql);
-	    $rs=M()->query($sql);
-	    if($rows){
-	        foreach ($rows as $k=>$v)
-	        {
-	            $fpath=$v["v_path"].$v["v_voicefile"];
-	            $fname=$v["v_voicefile"];
-	            $csv[]=$rows;
-	            $path[]=array("fpath"=>"$fpath","fname"=>"$fname");
-	        }
-	    }
+	    else
+        {
+            $sql=str_replace("tab_rec_cdrinfo","tab_rec_bakinfo",$sql);
+            $rs=M()->query($sql);
+            if($rs){
+                foreach ($rs as $k=>$v)
+                {
+                    $fpath=$v["v_path"].$v["v_voicefile"];
+                    $fname=$v["v_voicefile"];
+                    $csv=$rs;
+                    $path=array("fpath"=>"$fpath","fname"=>"$fname");
+                }
+            }
+
+        }
 	    //返回数组，包含2个元素，file包括文件信息，csv包括要生成CSV文件的内容。都是数组格式
 	    $aryReturn=array("file"=>$path,"csv"=>$csv);
 	    return $aryReturn;

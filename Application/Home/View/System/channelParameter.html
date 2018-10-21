@@ -193,6 +193,12 @@
 	
   <script>
       $('.downloadPeizhi').click(function(){
+        var flag = <?php echo canManage(); ?>;
+        if(!flag){
+             
+            alert('无权操作，请与管理员联系') 
+            return false;
+        }
       $('#alertModel').modal('show');
       $('.downloadName').css("display","none");
       var url="{:U('home/System/down_channelParameter')}"
@@ -218,20 +224,20 @@
 
     var videoinput =  $("input[name^='IsVideoChannel_']");
     videoinput.click(function(){
+        var videoNum = "{$videoNum}";
+        if(videoNum==''){
+          videoNum = 16
+        }
         var num = 0;
         $("input:checkbox[name^='IsVideoChannel_']:checked").each(function(k){
             num ++
         })
-        if(num > 16){
+        if(num > videoNum){
 
            if($(this).is(':checked')){
-              alert('最多只能选择16通道录像');return false;
+              alert("最多只能选择"+videoNum+"通道录像");return false;
            }
-           else
-           {
-
-           }
-           
+             
         }
     })
     
@@ -242,7 +248,7 @@
     $('.Alertmessage').html('无权操作，请与管理员联系') 
     return false;
     }
-    $("#form1").submit()
+    
  }
 
   </script>

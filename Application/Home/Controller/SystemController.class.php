@@ -28,13 +28,9 @@ class SystemController extends AuthController {
                  $data[$value] = $this->getParam($value);
                  $data["hid_".$value] = $this->getParam("hid_".$value);
 
-                 for($i=0;$i<$k;$i++){
-                     
-                    
+                 for($i=0;$i<$k;$i++){ 
                     if($data[$value][$i] != $data["hid_".$value][$i]){
                         $update = array();
-                       
-                        
                         
                         $update['V_Value'] = $data[$value][$i];
                         
@@ -101,7 +97,7 @@ class SystemController extends AuthController {
             foreach ($rs as $k=>$v){
                 $channelNo = $v['n_channelno'];
                 $where = array();
-                $where['N_ChannelNo'] = $channelNo;
+                $where['N_ChannelNo'] = $v['n_channelno'];
                 $where['advPara'] = array("gt",0);
                 $rsTitle = M('sys_paramschannel')->field("v_paramsname,V_ParamsNameCh")->where($where)->order('advPara')->select();
                 if($rsTitle){
@@ -157,21 +153,27 @@ class SystemController extends AuthController {
         
         //查找标题
         $where = array();
-        $where['N_ChannelNo'] = array("in",$channelNo);
-        $where['advPara'] = array("gt",0);
-        $rsTitle = M('sys_paramschannel')->field("v_paramsname,V_ParamsNameCh")->where($where)->order('advPara')->select();
+        $rsTitle = array();
+        if(!empty($channelNo)){
+           $where['N_ChannelNo'] = array("in",$channelNo); 
+           $where['advPara'] = array("gt",0);
+           $rsTitle = M('sys_paramschannel')->field("v_paramsname,V_ParamsNameCh")->where($where)->order('advPara')->select();
+        }
         
-        foreach ($rsTitle as $k=>$v){
-            if ($ChannelType != 33 && $v["v_paramsname"] == 'IsVideoChannel')
-            {
-                unset($rsTitle[$k]);
-            }//IP录音不要通道禁用启用
-            elseif ($v["v_paramsname"] == "ChannelUserDisable" && $ChannelType == '33')
-            {
-                unset($rsTitle[$k]);
-            }elseif ($v["v_paramsname"]=="DefaultRoute")
-            {
-                unset($rsTitle[$k]);
+        
+        if($rsTitle){
+            foreach ($rsTitle as $k=>$v){
+                if ($ChannelType != 33 && $v["v_paramsname"] == 'IsVideoChannel')
+                {
+                    unset($rsTitle[$k]);
+                }//IP录音不要通道禁用启用
+                elseif ($v["v_paramsname"] == "ChannelUserDisable" && $ChannelType == '33')
+                {
+                    unset($rsTitle[$k]);
+                }elseif ($v["v_paramsname"]=="DefaultRoute")
+                {
+                    unset($rsTitle[$k]);
+                }
             }
         }
         
@@ -193,6 +195,7 @@ class SystemController extends AuthController {
         $this->assign("CurrentPage",'channel');
         $this->display();
     }
+
     
     //高级参数
     public function paramsChannel(){

@@ -44,8 +44,7 @@
 /********** 1. IMPORTS **********/
 /********************************/
 
-/*@import url('bootstrap.min.css');*/
-/*@import url('bootstrap.css');*/
+@import url('bootstrap.min.css');
 @import url('bootstrap-override.css');
 @import url('weather-icons.min.css');
 @import url('jquery-ui-1.10.3.css');
@@ -113,11 +112,11 @@ h1,h2,h3,h4,h5,h6 {
 /**************************************/
 
 .headerwrapper {
-    background-color: #234b5b;
+    background-color: #00367a;
     min-height: 60px;
     position: fixed;
     width: 100%;
-    /*z-index: 1000;*/
+    z-index: 1000;
 }
 
 .headerwrapper:after {
@@ -135,9 +134,8 @@ h1,h2,h3,h4,h5,h6 {
     padding: 5px 15px;
     float: left;
     border-right: 1px solid rgba(255,255,255,0.14);
-    background-color: #babcc5;
+    background-color: #00367a;
     position: relative;
-    z-index: 1001;
 }
 
 .headerwrapper .header-left .logo {
@@ -428,7 +426,7 @@ h1,h2,h3,h4,h5,h6 {
 .mainwrapper {
     position: relative;
     top: 60px;
-	background:#234b5b;
+	background:#282E45;
 }
 
 .mainwrapper:before {
@@ -467,14 +465,13 @@ h1,h2,h3,h4,h5,h6 {
     position: absolute;
     top: 0;
     left: 0;
-	background:#234b5b;
+	background:#00367a;
 	height: 100vh;
-	height: 1000px\9;
 }
 
 .leftpanel .profile-left {
     padding: 15px;
-    /*min-height: 90px;*/
+    min-height: 90px;
     -webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.03);
     box-shadow: 0 2px 3px rgba(0,0,0,0.03);
     margin-right: 1px;
@@ -562,7 +559,7 @@ h1,h2,h3,h4,h5,h6 {
 .leftpanel .nav > li.active > a,
 .leftpanel .nav > li.active > a:hover {
     color: #fff;
-    background-color: #babcc5;
+    background-color: #57a1e7;
 }
 
 .leftpanel .nav > li > a i {
@@ -657,7 +654,7 @@ h1,h2,h3,h4,h5,h6 {
 /***** 4.2 MAIN PANEL STYLES *****/
 
 .mainpanel {
-    background: url(../../images/picture/Body.jpg);
+    background: #ffffff;
     margin-left: 230px;
 	   
 }
@@ -774,12 +771,8 @@ h1,h2,h3,h4,h5,h6 {
 .contentpanel {
     position: relative;
     padding: 20px;
-	background: url(../../images/picture/Body.jpg);
+	background: #E8E8FF;
 	 height: 100vh;
-	height: 1000px\9;
-	
-	overflow-x: hidden;
-	overflow-y: auto;
 }
 
 .bg-light {
@@ -2134,7 +2127,6 @@ ul.clock-category li a span {
     border-radius: 2px;
     border: 1px solid #bbb;
     background: #fff;
-    display: none\9;
 }
 
 .ckbox input[type="checkbox"]:disabled + label  {
@@ -4108,7 +4100,11 @@ a.event-close:hover {
     display: table;
     border-collapse: separate;
 }
- 
+
+.search_input-group-addon{
+	
+}
+
 .search_input-group-addon {
     padding: 6px 12px;
     font-size: 14px;
@@ -4122,7 +4118,7 @@ a.event-close:hover {
     vertical-align: middle;
 	border-radius: 2px;
     font-size: 13px;
- /*   background-color: #f7f7f7;*/
+    background-color: #f7f7f7;
 }
 
  
@@ -4145,69 +4141,4 @@ a.event-close:hover {
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 
-/*--------------硬盘参数----------------*/
-#pathMod .diskWrap{
-	max-height:400px;
-	overflow-y:scroll;
-	overflow-x: hidden;
-}
 
-#pathMod .diskWrap .item,
-#pathMod .fileWrap .item{
-	width: 100px;
-	height:100px;
-	position: relative;
-	top: 0;
-	left: 0;
-	border: 2px solid;
-	border-radius: 4px;
-	cursor: pointer;
-}
-
-#pathMod .diskWrap .item{
-	margin:0 auto 5px;
-	border-color: #ededed;
-}
-
-#pathMod .fileWrap .item{
-	float: left;
-	margin:0 5px 5px; 
-	border-color: transparent;
-}
-
-#pathMod .diskWrap .item.active {
-	border-color: #AAA;
-}
-
-#pathMod .fileWrap .item.active{
-	border-color: #DDD;
-}
-
-#pathMod .diskWrap .disk-ico,
-#pathMod .fileWrap .file-ico {
-	display:block;
-	position:absolute;
-	width: 60px;
-	height: 50px;
-	top: 10px;
-	left: 50%;
-	margin-left: -30px;
-}
-
-#pathMod .diskWrap .disk-ico{
-	background: url('/Public/assets/images/ico/Disk.gif') no-repeat 0 0 /cover;
-}
-
-#pathMod .fileWrap .file-ico{
-	background: url('/Public/assets/images/ico/folder.gif') no-repeat 0 0 /cover;
-}
-
-#pathMod .diskWrap .name ,
-#pathMod .fileWrap .name{
-	position:absolute;
-	top: 65px;
-	width: 100%;
-	left: 0;
-	text-align: center;
-	padding: 0 10px;
-}

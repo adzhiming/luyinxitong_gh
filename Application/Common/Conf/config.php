@@ -24,5 +24,6 @@ return array(
     'DB_CHARSET' => 'utf8',// 网站编码
     'DB_PORT'  => '3306',// 数据库端口
     'APP_DEBUG'     =>  true,// 开启调试模式
-    'DB_DEBUG' => true
+    'DB_DEBUG' => true,
+    'DEFAULT_STYLE_CSS'  =>'1' //1:广哈风格  2：南网风格 3：国网风格
 ); 

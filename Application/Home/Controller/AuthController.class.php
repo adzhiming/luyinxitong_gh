@@ -7,6 +7,28 @@ class AuthController extends Controller {
     public function __construct(){
         parent::__construct();
         header("Content-type: text/html; charset=utf-8");
+        $cssval = C('DEFAULT_STYLE_CSS');
+        switch ($cssval) {
+            case '1':
+                $logo = "/Public/assets/images/picture/logo1.png";
+                $DEFAULT_STYLE_CSS = '<link href="/Public/assets/bootstrap/css/style.default_gh.css" rel="stylesheet">';
+                break;
+            case '2':
+                $logo = "/Public/assets/images/picture/logo2.png";
+                $DEFAULT_STYLE_CSS = '<link href="/Public/assets/bootstrap/css/style.default_nw.css" rel="stylesheet">';
+                break;
+            case '3':
+                $logo = "/Public/assets/images/picture/logo3.png";
+                $DEFAULT_STYLE_CSS = '<link href="/Public/assets/bootstrap/css/style.default_gw.css" rel="stylesheet">';
+                break;        
+            
+            default:
+                $logo = "/Public/assets/images/picture/logo1.png";
+                $DEFAULT_STYLE_CSS = '<link href="/Public/assets/bootstrap/css/style.default_gh.css" rel="stylesheet">';
+                break;
+        }
+        $this->assign('LOGOURL',$logo);
+        $this->assign('DEFAULT_STYLE_CSS',$DEFAULT_STYLE_CSS);
         $action = ACTION_NAME; 
         $arr = array('recordPlayer','videoPlayer','recordPlayer');
         if(in_array($action, $arr)){

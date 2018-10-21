@@ -1,8 +1,21 @@
         <header>
+            <style>
+              .styletpl{
+                                    height: 20px;
+    width: 20px; 
+    line-height: 30px; 
+    position: inherit;
+    float: left;
+    bottom: -20px;
+    border: 1.5px solid #fff;
+        margin-right: 5px;
+    cursor: pointer;
+              }
+            </style>
             <div class="headerwrapper">
                 <div class="header-left">
                     <a href="/home/record/recordList" class="logo">
-                        <img src="__PUBLIC__/assets/images/picture/logo.png" alt="" /> 
+                        <img src="{$LOGOURL}" alt="" /> 
                     </a>
                     <div class="pull-right">
                         <a href="#" class="menu-collapse">
@@ -14,11 +27,13 @@
                     <div class="pull-right">
                         
                         <div class="btn-group btn-group-list btn-group-notification">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                           
-                              <span class="badge">{$sys_Vinfo.v_value}录音管理系统</span>
+                              <span class="badge">{$sys_Vinfo.v_value}录音管理系统2</span>
                             </button>
-                           
+                           <!-- <div class="styletpl" style="background-color: #2f312f"></div>
+                           <div class="styletpl" style="background-color: #234b5b"></div>
+                           <div class="styletpl" style="background-color: #222684"></div> -->
                         </div><!-- btn-group -->
                         
                        
